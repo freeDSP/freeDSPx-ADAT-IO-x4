@@ -74,14 +74,14 @@ begin
 		  
 			elsif ce48k = '1' then
 				-- 24Bit, Left-Justified
-				chn1 <= shiftreg( 255 downto 232 );
-				chn2 <= shiftreg( 223 downto 200 );
-				chn3 <= shiftreg( 191 downto 168 );
-				chn4 <= shiftreg( 159 downto 136 );
-				chn5 <= shiftreg( 127 downto 104 );
-				chn6 <= shiftreg(  95 downto  72 );
-				chn7 <= shiftreg(  63 downto  40 );
-				chn8 <= shiftreg(  31 downto   8 );
+				chn1 <= shiftreg( 254 downto 231 );
+				chn2 <= shiftreg( 222 downto 199 );
+				chn3 <= shiftreg( 190 downto 167 );
+				chn4 <= shiftreg( 158 downto 135 );
+				chn5 <= shiftreg( 126 downto 103 );
+				chn6 <= shiftreg(  94 downto  71 );
+				chn7 <= shiftreg(  62 downto  39 );
+				chn8 <= shiftreg(  30 downto   7 );
 			
 			end if;
 		end if;
