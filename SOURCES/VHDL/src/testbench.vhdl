@@ -14,20 +14,23 @@ architecture tb_adatiox4 of tb_adatiox4 is
 	       adatin1  : in  std_logic;                                   -- ADAT-Eingangssignal 1
 	       bclk     : out std_logic;                                   -- Bitclock
 	       wclk     : out std_logic;                                   -- Wordclock
+	       tdmout1  : out std_logic;                                   -- TDM-Ausgangssignal 1
 	       adatout1 : out std_logic;                                   -- ADAT-Ausgangssignal 1
          rst      : in  std_logic);                                  -- Systemreset
   end component;
   
   signal clk    : std_logic := '0';
-  signal tdmin1 : std_logic := '0';
   signal bclk   : std_logic;
   signal wclk   : std_logic;
   signal rst    : std_logic := '1';
   
   signal tdmpattern : std_logic_vector( 255 downto 0 );
   signal tdmsig : std_logic;
+  
+  signal tdmin1 : std_logic := '0';
   signal adatout1 : std_logic;
   signal adatin1 : std_logic;
+  signal tdmout1 : std_logic;
   
   signal lasttdmin : std_logic_vector( 255 downto 0 );
   
@@ -45,6 +48,7 @@ begin
 		adatin1 => adatin1,
 		bclk => bclk,
 		wclk => wclk,
+		tdmout1 => tdmout1,
 		adatout1 => adatout1,
 		rst => rst
 	);

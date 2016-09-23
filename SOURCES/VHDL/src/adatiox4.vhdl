@@ -28,6 +28,7 @@ entity adatiox4 is
 	       adatin1  : in  std_logic;                                   -- ADAT-Eingangssignal 1
 	       bclk     : out std_logic;                                   -- Bitclock
 	       wclk     : out std_logic;                                   -- Wordclock
+	       tdmout1  : out std_logic;                                   -- TDM-Ausgangssignal 1
 	       adatout1 : out std_logic;                                   -- ADAT-Ausgangssignal 1
          rst      : in  std_logic);                                  -- Systemreset
 end adatiox4;
@@ -87,6 +88,24 @@ architecture Behavioral of adatiox4 is
          chn7    : out std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 7
          chn8    : out std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 8
          sync    : out std_logic );                                  -- Empfänger hat sich synchronisiert zum ADAT-Stream
+  end component;
+  
+  -- Komponente TDM-Sender
+  component tdmtx 
+  port ( clk     : in  std_logic;                                    -- Systemtakt (24,576MHz)
+         rst     : in  std_logic;                                    -- Systemreset
+         icntr   : in  unsigned(8 downto 0);                         -- Ablaufzähler
+         ce12M   : in  std_logic;                                    -- Clock-Enable Bittakt (12,288MHz)
+         ce48k   : in  std_logic;                                    -- Clock-Enable Worttakt (48kHz)
+         chn1    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 1
+         chn2    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 2
+         chn3    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 3
+         chn4    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 4
+         chn5    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 5
+         chn6    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 6
+         chn7    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 7
+         chn8    : in  std_logic_vector(23 downto 0);                -- 24Bit-Wort Kanal 8
+         tdmout : out std_logic );                                   -- TDM-Signal
   end component;
   	
 	constant bclk_div : integer := 2;                                  -- Teilerverhältnis für Bittakt
@@ -172,6 +191,24 @@ begin
     chn7 => out7,
     chn8 => out8,
     sync => sync1
+  );
+  
+  -- Instanz tdmtx1
+  tdmtx1 : tdmtx port map (
+    clk => clk,
+    rst => rst,
+    icntr => icntr,
+    ce12M => ce12M,
+    ce48k => ce48k,
+    chn1 => out1,
+    chn2 => out2,
+    chn3 => out3,
+    chn4 => out4,
+    chn5 => out5,
+    chn6 => out6,
+    chn7 => out7,
+    chn8 => out8,
+    tdmout => tdmout1
   );
   
   -- Zähler für Ablaufsteuerung

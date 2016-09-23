@@ -42,11 +42,9 @@ entity adatrx is
 end adatrx;
 
 architecture Behavioral of adatrx is
-  --constant kIntCntrWidth : integer := 8;
   
   signal adatFrame : std_logic_vector(255 downto 0) := (others => '0');  -- Schieberegister für ADAT Frame
   signal dint      : std_logic := '1';                               -- Letzter Eingangszustand des NRZI-Dekodierers
-  --signal issynced  : std_logic := '0';                                      -- internes Flag für Synchronisation auf ADAT-Stream 
   
   signal iuserbits : std_logic_vector( 3 downto 0);                  -- User-Bits (interne Zwischenspeicherung)
   signal ichn1     : std_logic_vector(23 downto 0);                  -- 24Bit-Wort Kanal 1 (interne Zwischenspeicherung)
