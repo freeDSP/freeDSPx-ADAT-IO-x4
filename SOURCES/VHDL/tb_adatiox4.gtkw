@@ -1,49 +1,50 @@
 [*]
 [*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
-[*] Tue Sep 20 20:50:15 2016
+[*] Thu Sep 22 10:27:16 2016
 [*]
 [dumpfile] "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/tb_adatiox4.vcd"
-[dumpfile_mtime] "Tue Sep 20 20:49:44 2016"
-[dumpfile_size] 12678753
+[dumpfile_mtime] "Thu Sep 22 10:26:25 2016"
+[dumpfile_size] 27571482
 [savefile] "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/tb_adatiox4.gtkw"
-[timestart] 990090000
+[timestart] 2537740000
 [size] 1402 855
 [pos] -1 -1
-*-24.000000 1034000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-24.000000 2570000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] uut_adatiox4.
 [sst_width] 193
-[signals_width] 305
+[signals_width] 392
 [sst_expanded] 1
 [sst_vpaned_height] 322
 @28
 clk
 rst
 wclk
-@24
 bclk
-@28
 [color] 6
 uut_adatiox4.tdmrx1.ce12m
 [color] 6
 uut_adatiox4.adattx1.ce48k
 @24
 uut_adatiox4.icntr[8:0]
-@28
-uut_adatiox4.tdmrx1.tdmin
-uut_adatiox4.tdmrx1.shiftreg[255:0]
-uut_adatiox4.chn1[23:0]
-uut_adatiox4.chn2[23:0]
-uut_adatiox4.chn3[23:0]
-uut_adatiox4.chn4[23:0]
-uut_adatiox4.chn5[23:0]
-uut_adatiox4.chn6[23:0]
-uut_adatiox4.chn7[23:0]
-uut_adatiox4.chn8[23:0]
+@22
 uut_adatiox4.adattx1.adatframe[29:0]
-uut_adatiox4.adattx1.nrziin
-@29
-uut_adatiox4.adattx1.qint
+tdmpattern[255:0]
+uut_adatiox4.in1[23:0]
+uut_adatiox4.in8[23:0]
+@24
+uut_adatiox4.tdmrx1.shiftreg[255:0]
 @28
+uut_adatiox4.adattx1.nrziin
 uut_adatiox4.adattx1.adatout
+uut_adatiox4.adatrx1.adatin
+uut_adatiox4.adatrx1.nrziout
+uut_adatiox4.adatrx1.adatframe[255:0]
+@22
+uut_adatiox4.adatrx1.chn1[23:0]
+@28
+uut_adatiox4.adatrx1.issynced
+@22
+uut_adatiox4.out1[23:0]
+uut_adatiox4.out8[23:0]
 [pattern_trace] 1
 [pattern_trace] 0

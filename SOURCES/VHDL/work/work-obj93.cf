@@ -1,13 +1,16 @@
 v 4
-file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/adattx.vhdl" "d3756cd0babf013e3d55bf0ebf42ef4b94c9d077" "20160920204938.742":
-  entity adattx at 21( 470) + 0 on 73;
-  architecture behavioral of adattx at 42( 1854) + 0 on 74;
-file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/tdmrx.vhdl" "4ebb0bcfcfee6b43dd70122e07732dd73e8fb446" "20160920154331.612":
-  entity tdmrx at 21( 480) + 0 on 55;
-  architecture behavioral of tdmrx at 41( 1796) + 0 on 56;
-file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/testbench.vhdl" "4965aca434523938b8fcd50e2a239c40280bb35a" "20160920074031.327":
-  entity tb_adatiox4 at 1( 0) + 0 on 11;
-  architecture tb_adatiox4 of tb_adatiox4 at 7( 84) + 0 on 12;
-file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/adatiox4.vhdl" "98acc8de7f3f5d791eca66d292f8bef2770970bb" "20160920181339.081":
-  entity adatiox4 at 21( 474) + 0 on 63;
-  architecture behavioral of adatiox4 at 33( 1008) + 0 on 64;
+file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/adatrx.vhdl" "59752783ea57e284f46e02cd37e0eb134fbdf7a1" "20160923070010.853":
+  entity adatrx at 21( 474) + 0 on 115;
+  architecture behavioral of adatrx at 44( 2063) + 0 on 116;
+file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/adatiox4.vhdl" "84437ca461a812527887e1e73d5521b7333d024c" "20160923070250.049":
+  entity adatiox4 at 21( 474) + 0 on 117;
+  architecture behavioral of adatiox4 at 35( 1195) + 0 on 118;
+file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/testbench.vhdl" "a1799c78626654222ff50b5919b14362c6c9548a" "20160921211559.212":
+  entity tb_adatiox4 at 1( 0) + 0 on 93;
+  architecture tb_adatiox4 of tb_adatiox4 at 8( 110) + 0 on 94;
+file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/tdmrx.vhdl" "4ebb0bcfcfee6b43dd70122e07732dd73e8fb446" "20160921065659.407":
+  entity tdmrx at 21( 480) + 0 on 15;
+  architecture behavioral of tdmrx at 41( 1796) + 0 on 16;
+file "/Users/rkn/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/" "./src/adattx.vhdl" "3ba47905e81078c05bd014c2c441ebf7883a529e" "20160921213845.276":
+  entity adattx at 21( 470) + 0 on 95;
+  architecture behavioral of adattx at 42( 1854) + 0 on 96;

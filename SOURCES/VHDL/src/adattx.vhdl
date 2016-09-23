@@ -46,10 +46,11 @@ architecture Behavioral of adattx is
   signal nrziIn    : std_logic := 'U';                               -- Eingang des NRZI-Enkodierers (nur zum Debuggen)
   signal qint      : std_logic := '0';                               -- Letzter Ausgangszustand des NRZI-Enkodierers
   
+  signal blockstart_tx : std_logic := '0';
 begin
   
   -- ADAT Frame bauen und senden
-  adatframe_proc : process(clk)
+  adattx_proc : process(clk)
   begin
     if rising_edge(clk) then
       if rst = '1' then
@@ -57,15 +58,16 @@ begin
         nrziIn <= '0';
         qint <= '0';
         adatout <= '0';
+        blockstart_tx <= '0';
         
       else
         if ce12M = '1' then
           case icntr is
           when B"000000000" =>                                       -- icntr=0: User-Bits
-            adatFrame( 29 downto 25 ) <= B"11111";
+            adatFrame( 29 downto 25 ) <= bitstuffing & B"0110";
             adatFrame( 24 downto  0 ) <= (others => '0');
             adatout <= '1';
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint;
             adatout <= not qint; 
@@ -76,7 +78,7 @@ begin
                         & bitstuffing & chn1( 11 downto  8 )
                         & bitstuffing & chn1(  7 downto  4 )
                         & bitstuffing & chn1(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint;
             adatout <= not qint;            
@@ -87,7 +89,7 @@ begin
                         & bitstuffing & chn2( 11 downto  8 )
                         & bitstuffing & chn2(  7 downto  4 )
                         & bitstuffing & chn2(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing; 
+            nrziIn <= bitstuffing; --bitstuffing; 
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint;
             adatout <= not qint; 
@@ -98,7 +100,7 @@ begin
                         & bitstuffing & chn3( 11 downto  8 )
                         & bitstuffing & chn3(  7 downto  4 )
                         & bitstuffing & chn3(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint;
             adatout <= not qint; 
@@ -109,7 +111,7 @@ begin
                         & bitstuffing & chn4( 11 downto  8 )
                         & bitstuffing & chn4(  7 downto  4 )
                         & bitstuffing & chn4(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint;
             adatout <= not qint; 
@@ -120,7 +122,7 @@ begin
                         & bitstuffing & chn5( 11 downto  8 )
                         & bitstuffing & chn5(  7 downto  4 )
                         & bitstuffing & chn5(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint; 
             adatout <= not qint;
@@ -131,7 +133,7 @@ begin
                         & bitstuffing & chn6( 11 downto  8 )
                         & bitstuffing & chn6(  7 downto  4 )
                         & bitstuffing & chn6(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint;
             adatout <= not qint; 
@@ -142,7 +144,7 @@ begin
                         & bitstuffing & chn7( 11 downto  8 )
                         & bitstuffing & chn7(  7 downto  4 )
                         & bitstuffing & chn7(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint;
             adatout <= not qint; 
@@ -153,20 +155,22 @@ begin
                         & bitstuffing & chn8( 11 downto  8 )
                         & bitstuffing & chn8(  7 downto  4 )
                         & bitstuffing & chn8(  3 downto  0 );
-            nrziIn <= '-'; --bitstuffing;
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint; 
             adatout <= not qint;
-          when B"111101010" =>                                       -- icntr=490: Sync
+          when B"111101010" =>                                       -- icntr=490: Block
             adatFrame( 29 downto 19 )  <= bitstuffing & B"0000000000";
             adatFrame( 18 downto  0 ) <= (others => '0');
-            nrziIn <= '-'; --bitstuffing;
+            blockstart_tx <= '1';
+            nrziIn <= bitstuffing; --bitstuffing;
             -- adatFrame(29) ist in jedem Fall '1' => Bitwechsel
             qint <= not qint; 
             adatout <= not qint;
           when others =>
             nrziIn <= adatFrame( 28 );
             adatFrame( 29 downto 1 ) <= adatFrame( 28 downto 0 );
+            blockstart_tx <= '0';
             if adatFrame( 28 ) = '1' then                            -- '1' führt zu einem Bitwechsel
               qint <= not qint; 
               adatout <= not qint;
@@ -178,6 +182,5 @@ begin
       end if;
     end if;
   end process;
-  
-  
+    
 end Behavioral;
