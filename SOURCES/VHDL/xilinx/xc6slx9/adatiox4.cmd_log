@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/xilinx/xc6slx9/adatiox4.xst" -ofn "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/xilinx/xc6slx9/adatiox4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 adatiox4.ngc adatiox4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adatiox4_map.ncd adatiox4.ngd adatiox4.pcf 
+par -w -intstyle ise -ol high -mt off adatiox4_map.ncd adatiox4.ncd adatiox4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adatiox4.twx adatiox4.ncd -o adatiox4.twr adatiox4.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adatiox4.ucf -p xc6slx9-tqg144-3 adatiox4.ngc adatiox4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adatiox4_map.ncd adatiox4.ngd adatiox4.pcf 
+par -w -intstyle ise -ol high -mt off adatiox4_map.ncd adatiox4.ncd adatiox4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adatiox4.twx adatiox4.ncd -o adatiox4.twr adatiox4.pcf -ucf adatiox4.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adatiox4.ucf -p xc6slx9-tqg144-3 adatiox4.ngc adatiox4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adatiox4_map.ncd adatiox4.ngd adatiox4.pcf 
+par -w -intstyle ise -ol high -mt off adatiox4_map.ncd adatiox4.ncd adatiox4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adatiox4.twx adatiox4.ncd -o adatiox4.twr adatiox4.pcf -ucf adatiox4.ucf 
+bitgen -intstyle ise -f adatiox4.ut adatiox4.ncd 

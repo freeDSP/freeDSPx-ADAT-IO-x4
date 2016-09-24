@@ -1,0 +1,5 @@
+vhdl work "../../src/tdmtx.vhdl"
+vhdl work "../../src/tdmrx.vhdl"
+vhdl work "../../src/adattx.vhdl"
+vhdl work "../../src/adatrx.vhdl"
+vhdl work "../../src/adatiox4.vhdl"

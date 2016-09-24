@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Sep 24 20:07:00 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P134" LEVEL 1;
+COMP "rst" LOCATE = SITE "P2" LEVEL 1;
+COMP "adatin1" LOCATE = SITE "P142" LEVEL 1;
+COMP "tdmout1" LOCATE = SITE "P126" LEVEL 1;
+COMP "bclk" LOCATE = SITE "P140" LEVEL 1;
+COMP "adatout1" LOCATE = SITE "P141" LEVEL 1;
+COMP "tdmin1" LOCATE = SITE "P127" LEVEL 1;
+COMP "wclk" LOCATE = SITE "P124" LEVEL 1;
+SCHEMATIC END;
+

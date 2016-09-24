@@ -1,0 +1,15 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "adatin1" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "adatin1" LOC = P142;
+NET "adatout1" LOC = P141;
+NET "bclk" LOC = P140;
+NET "clk" LOC = P134;
+NET "rst" LOC = P2;
+NET "tdmin1" LOC = P127;
+NET "tdmout1" LOC = P126;
+NET "wclk" LOC = P124;

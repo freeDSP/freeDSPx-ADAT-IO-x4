@@ -1,0 +1,578 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: adatiox4.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "adatiox4.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "adatiox4"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : adatiox4
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/tdmtx.vhdl" into library work
+Parsing entity <tdmtx>.
+Parsing architecture <Behavioral> of entity <tdmtx>.
+Parsing VHDL file "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/tdmrx.vhdl" into library work
+Parsing entity <tdmrx>.
+Parsing architecture <Behavioral> of entity <tdmrx>.
+Parsing VHDL file "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adattx.vhdl" into library work
+Parsing entity <adattx>.
+Parsing architecture <Behavioral> of entity <adattx>.
+Parsing VHDL file "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adatrx.vhdl" into library work
+Parsing entity <adatrx>.
+Parsing architecture <Behavioral> of entity <adatrx>.
+Parsing VHDL file "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adatiox4.vhdl" into library work
+Parsing entity <adatiox4>.
+Parsing architecture <Behavioral> of entity <adatiox4>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <adatiox4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <tdmrx> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <adattx> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adattx.vhdl" Line 53: Assignment to nrziin ignored, since the identifier is never used
+
+Elaborating entity <adatrx> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <tdmtx> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <adatiox4>.
+    Related source file is "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adatiox4.vhdl".
+INFO:Xst:3210 - "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adatiox4.vhdl" line 178: Output port <userbits> of the instance <adatrx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adatiox4.vhdl" line 178: Output port <sync> of the instance <adatrx1> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <bclk>.
+    Found 1-bit register for signal <wclk>.
+    Found 1-bit register for signal <ce12M>.
+    Found 1-bit register for signal <bclk_cnt>.
+    Found 1-bit register for signal <ce48k>.
+    Found 9-bit register for signal <wclk_cnt>.
+    Found 9-bit register for signal <icntr>.
+    Found 9-bit adder for signal <icntr[8]_GND_4_o_add_0_OUT> created at line 1241.
+    Found 1-bit adder for signal <bclk_cnt[0]_PWR_4_o_add_4_OUT<0>> created at line 251.
+    Found 9-bit adder for signal <wclk_cnt[8]_GND_4_o_add_6_OUT> created at line 274.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+Unit <adatiox4> synthesized.
+
+Synthesizing Unit <tdmrx>.
+    Related source file is "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/tdmrx.vhdl".
+    Found 24-bit register for signal <chn1>.
+    Found 24-bit register for signal <chn2>.
+    Found 24-bit register for signal <chn3>.
+    Found 24-bit register for signal <chn4>.
+    Found 24-bit register for signal <chn5>.
+    Found 24-bit register for signal <chn6>.
+    Found 24-bit register for signal <chn7>.
+    Found 24-bit register for signal <chn8>.
+    Found 256-bit register for signal <shiftreg>.
+    Summary:
+	inferred 448 D-type flip-flop(s).
+Unit <tdmrx> synthesized.
+
+Synthesizing Unit <adattx>.
+    Related source file is "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adattx.vhdl".
+WARNING:Xst:647 - Input <ce48k> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <qint>.
+    Found 1-bit register for signal <adatout>.
+    Found 30-bit register for signal <adatFrame>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <adattx> synthesized.
+
+Synthesizing Unit <adatrx>.
+    Related source file is "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/adatrx.vhdl".
+WARNING:Xst:647 - Input <icntr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <dint>.
+    Found 1-bit register for signal <sync>.
+    Found 4-bit register for signal <iuserbits>.
+    Found 24-bit register for signal <ichn1>.
+    Found 24-bit register for signal <ichn2>.
+    Found 24-bit register for signal <ichn3>.
+    Found 24-bit register for signal <ichn4>.
+    Found 24-bit register for signal <ichn5>.
+    Found 24-bit register for signal <ichn6>.
+    Found 24-bit register for signal <ichn7>.
+    Found 24-bit register for signal <ichn8>.
+    Found 24-bit register for signal <chn1>.
+    Found 24-bit register for signal <chn2>.
+    Found 24-bit register for signal <chn3>.
+    Found 24-bit register for signal <chn4>.
+    Found 24-bit register for signal <chn5>.
+    Found 24-bit register for signal <chn6>.
+    Found 24-bit register for signal <chn7>.
+    Found 24-bit register for signal <chn8>.
+    Found 4-bit register for signal <userbits>.
+    Found 256-bit register for signal <adatFrame>.
+    Summary:
+	inferred 650 D-type flip-flop(s).
+Unit <adatrx> synthesized.
+
+Synthesizing Unit <tdmtx>.
+    Related source file is "/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/src/tdmtx.vhdl".
+WARNING:Xst:647 - Input <icntr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <tdmout>.
+    Found 256-bit register for signal <shiftreg>.
+    Summary:
+	inferred 257 D-type flip-flop(s).
+	inferred 510 Multiplexer(s).
+Unit <tdmtx> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 1-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 42
+ 1-bit register                                        : 10
+ 24-bit register                                       : 24
+ 256-bit register                                      : 3
+ 30-bit register                                       : 1
+ 4-bit register                                        : 2
+ 9-bit register                                        : 2
+# Multiplexers                                         : 510
+ 1-bit 2-to-1 multiplexer                              : 510
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <qint> in Unit <adattx1> is equivalent to the following FF/Latch, which will be removed : <adatout> 
+WARNING:Xst:1710 - FF/Latch <shiftreg_0> (without init value) has a constant value of 0 in block <tdmtx1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <shiftreg_255> of sequential type is unconnected in block <tdmrx1>.
+WARNING:Xst:2677 - Node <adatFrame_29> of sequential type is unconnected in block <adattx1>.
+WARNING:Xst:2677 - Node <adatFrame_250> of sequential type is unconnected in block <adatrx1>.
+WARNING:Xst:2677 - Node <adatFrame_251> of sequential type is unconnected in block <adatrx1>.
+WARNING:Xst:2677 - Node <adatFrame_252> of sequential type is unconnected in block <adatrx1>.
+WARNING:Xst:2677 - Node <adatFrame_253> of sequential type is unconnected in block <adatrx1>.
+WARNING:Xst:2677 - Node <adatFrame_254> of sequential type is unconnected in block <adatrx1>.
+WARNING:Xst:2677 - Node <adatFrame_255> of sequential type is unconnected in block <adatrx1>.
+
+Synthesizing (advanced) Unit <adatiox4>.
+The following registers are absorbed into counter <bclk_cnt_0>: 1 register on signal <bclk_cnt_0>.
+The following registers are absorbed into counter <icntr>: 1 register on signal <icntr>.
+The following registers are absorbed into counter <wclk_cnt>: 1 register on signal <wclk_cnt>.
+Unit <adatiox4> synthesized (advanced).
+WARNING:Xst:2677 - Node <shiftreg_255> of sequential type is unconnected in block <tdmrx>.
+WARNING:Xst:2677 - Node <adatFrame_29> of sequential type is unconnected in block <adattx>.
+WARNING:Xst:2677 - Node <shiftreg_255> of sequential type is unconnected in block <tdmtx>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 1-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 1388
+ Flip-Flops                                            : 1388
+# Multiplexers                                         : 509
+ 1-bit 2-to-1 multiplexer                              : 509
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <shiftreg_0> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <qint> in Unit <adattx> is equivalent to the following FF/Latch, which will be removed : <adatout> 
+WARNING:Xst:1710 - FF/Latch <shiftreg_1> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shiftreg_2> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shiftreg_3> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shiftreg_4> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shiftreg_5> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shiftreg_6> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shiftreg_7> (without init value) has a constant value of 0 in block <tdmtx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <tdmrx> ...
+
+Optimizing unit <adatiox4> ...
+
+Optimizing unit <adattx> ...
+
+Optimizing unit <adatrx> ...
+
+Optimizing unit <tdmtx> ...
+WARNING:Xst:2677 - Node <adatrx1/userbits_3> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/userbits_2> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/userbits_1> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/userbits_0> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/iuserbits_3> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/iuserbits_2> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/iuserbits_1> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/iuserbits_0> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/adatFrame_255> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/adatFrame_254> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/adatFrame_253> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/adatFrame_252> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/adatFrame_251> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/adatFrame_250> of sequential type is unconnected in block <adatiox4>.
+WARNING:Xst:2677 - Node <adatrx1/sync> of sequential type is unconnected in block <adatiox4>.
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_1> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_1> 
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_2> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_2> 
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_3> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_3> 
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_4> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_4> 
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_5> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_5> 
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_6> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_6> 
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_7> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_7> 
+INFO:Xst:2261 - The FF/Latch <wclk_cnt_8> in Unit <adatiox4> is equivalent to the following FF/Latch, which will be removed : <icntr_8> 
+INFO:Xst:2261 - The FF/Latch <bclk> in Unit <adatiox4> is equivalent to the following 3 FFs/Latches, which will be removed : <wclk_cnt_0> <bclk_cnt_0_0> <icntr_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block adatiox4, actual ratio is 34.
+FlipFlop ce12M has been replicated 1 time(s)
+FlipFlop wclk_cnt_1 has been replicated 2 time(s)
+FlipFlop wclk_cnt_2 has been replicated 3 time(s)
+FlipFlop wclk_cnt_3 has been replicated 2 time(s)
+FlipFlop wclk_cnt_4 has been replicated 4 time(s)
+FlipFlop wclk_cnt_6 has been replicated 3 time(s)
+FlipFlop wclk_cnt_7 has been replicated 2 time(s)
+FlipFlop wclk_cnt_8 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <adatiox4> :
+	Found 9-bit shift register for signal <tdmrx1/shiftreg_231>.
+	Found 9-bit shift register for signal <tdmrx1/shiftreg_199>.
+	Found 9-bit shift register for signal <tdmrx1/shiftreg_167>.
+	Found 9-bit shift register for signal <tdmrx1/shiftreg_135>.
+	Found 9-bit shift register for signal <tdmrx1/shiftreg_103>.
+	Found 9-bit shift register for signal <tdmrx1/shiftreg_71>.
+	Found 9-bit shift register for signal <tdmrx1/shiftreg_39>.
+	Found 8-bit shift register for signal <tdmrx1/shiftreg_7>.
+Unit <adatiox4> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1322
+ Flip-Flops                                            : 1322
+# Shift Registers                                      : 8
+ 8-bit shift register                                  : 1
+ 9-bit shift register                                  : 7
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : adatiox4.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 892
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 8
+#      LUT2                        : 11
+#      LUT3                        : 431
+#      LUT4                        : 134
+#      LUT5                        : 221
+#      LUT6                        : 66
+#      MUXCY                       : 8
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 1346
+#      FD                          : 30
+#      FDE                         : 200
+#      FDR                         : 253
+#      FDRE                        : 863
+# Shift Registers                  : 8
+#      SRLC16E                     : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 3
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1346  out of  11440    11%  
+ Number of Slice LUTs:                  881  out of   5720    15%  
+    Number used as Logic:               873  out of   5720    15%  
+    Number used as Memory:                8  out of   1440     0%  
+       Number used as SRL:                8
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1524
+   Number with an unused Flip Flop:     178  out of   1524    11%  
+   Number with an unused LUT:           643  out of   1524    42%  
+   Number of fully used LUT-FF pairs:   703  out of   1524    46%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    102     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1354  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.889ns (Maximum Frequency: 204.558MHz)
+   Minimum input arrival time before clock: 6.351ns
+   Maximum output required time after clock: 3.926ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.889ns (frequency: 204.558MHz)
+  Total number of paths / destination ports: 9114 / 2423
+-------------------------------------------------------------------------
+Delay:               4.889ns (Levels of Logic = 4)
+  Source:            bclk (FF)
+  Destination:       adattx1/adatFrame_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: bclk to adattx1/adatFrame_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.447   0.909  bclk (bclk_OBUF)
+     LUT2:I1->O            2   0.205   0.617  adattx1/PWR_6_o_icntr[8]_equal_7_o<8>1_SW0 (N9)
+     LUT6:I5->O           13   0.205   0.933  adattx1/PWR_6_o_icntr[8]_equal_7_o<8>1_1 (adattx1/PWR_6_o_icntr[8]_equal_7_o<8>11)
+     LUT6:I5->O           14   0.205   1.062  adattx1/out3_1 (adattx1/out31)
+     LUT6:I4->O            1   0.203   0.000  adattx1/GND_6_o_PWR_6_o_select_11_OUT<26> (adattx1/GND_6_o_PWR_6_o_select_11_OUT<4>)
+     FDRE:D                    0.102          adattx1/adatFrame_4
+    ----------------------------------------
+    Total                      4.889ns (1.367ns logic, 3.522ns route)
+                                       (28.0% logic, 72.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1341 / 1340
+-------------------------------------------------------------------------
+Offset:              6.351ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       adatrx1/chn8_23 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to adatrx1/chn8_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1138   1.222   2.345  rst_IBUF (rst_IBUF)
+     LUT2:I0->O          192   0.203   2.275  adatrx1/_n0229_inv1_rstpot (adatrx1/_n0229_inv1_rstpot)
+     LUT3:I0->O            1   0.205   0.000  adatrx1/chn3_0_dpot (adatrx1/chn3_0_dpot)
+     FDE:D                     0.102          adatrx1/chn3_0
+    ----------------------------------------
+    Total                      6.351ns (1.732ns logic, 4.619ns route)
+                                       (27.3% logic, 72.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.926ns (Levels of Logic = 1)
+  Source:            bclk (FF)
+  Destination:       bclk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: bclk to bclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.447   0.908  bclk (bclk_OBUF)
+     OBUF:I->O                 2.571          bclk_OBUF (bclk)
+    ----------------------------------------
+    Total                      3.926ns (3.018ns logic, 0.908ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.889|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 8.97 secs
+ 
+--> 
+
+
+Total memory usage is 391016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+
