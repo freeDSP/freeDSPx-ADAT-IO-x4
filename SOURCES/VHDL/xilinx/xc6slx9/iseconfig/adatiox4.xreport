@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-09-24T19:54:17</DateModified>
+  <DateModified>2016-09-25T12:32:41</DateModified>
   <ModuleName>adatiox4</ModuleName>
-  <SummaryTimeStamp>2016-09-24T19:36:22</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-09-25T12:30:39</SummaryTimeStamp>
   <SavedFilePath>/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/xilinx/xc6slx9/iseconfig/adatiox4.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/media/psf/Home/Documents/KiCAD/projekte/freeDSP/freeDSPx-ADAT-IO-x4/SOURCES/VHDL/xilinx/xc6slx9/</ImplementationReportsDirectory>
   <DateInitialized>2016-09-24T19:33:05</DateInitialized>

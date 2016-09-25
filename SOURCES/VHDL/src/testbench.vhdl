@@ -10,12 +10,16 @@ architecture tb_adatiox4 of tb_adatiox4 is
 	-- Component Declaration for the Unit Under Test (UUT)
 	component adatiox4
 	port ( clk      : in  std_logic;                                   -- Systemtakt (24,576MHz)
-	       tdmin1   : in  std_logic;                                   -- TDM-Eingangsignal 1
+	       tdmin1   : in  std_logic;                                   -- TDM-Eingangssignal 1
+	       tdmin2   : in  std_logic;                                   -- TDM-Eingangssignal 2
 	       adatin1  : in  std_logic;                                   -- ADAT-Eingangssignal 1
+	       adatin2  : in  std_logic;                                   -- ADAT-Eingangssignal 2
 	       bclk     : out std_logic;                                   -- Bitclock
 	       wclk     : out std_logic;                                   -- Wordclock
 	       tdmout1  : out std_logic;                                   -- TDM-Ausgangssignal 1
+	       tdmout2  : out std_logic;                                   -- TDM-Ausgangssignal 2
 	       adatout1 : out std_logic;                                   -- ADAT-Ausgangssignal 1
+	       adatout2 : out std_logic;                                   -- ADAT-Ausgangssignal 2
          rst      : in  std_logic);                                  -- Systemreset
   end component;
   
@@ -28,9 +32,13 @@ architecture tb_adatiox4 of tb_adatiox4 is
   signal tdmsig : std_logic;
   
   signal tdmin1 : std_logic := '0';
+  signal tdmin2 : std_logic := '0';
   signal adatout1 : std_logic;
+  signal adatout2 : std_logic;
   signal adatin1 : std_logic;
+  signal adatin2 : std_logic;
   signal tdmout1 : std_logic;
+  signal tdmout2 : std_logic;
   
   signal lasttdmin : std_logic_vector( 255 downto 0 );
   
@@ -45,11 +53,15 @@ begin
 	uut_adatiox4 : adatiox4 port map (
 		clk => clk,
 		tdmin1 => tdmin1,
+		tdmin2 => tdmin2,
 		adatin1 => adatin1,
+		adatin2 => adatin2,
 		bclk => bclk,
 		wclk => wclk,
 		tdmout1 => tdmout1,
+		tdmout2 => tdmout2,
 		adatout1 => adatout1,
+		adatout2 => adatout2,
 		rst => rst
 	);
   
