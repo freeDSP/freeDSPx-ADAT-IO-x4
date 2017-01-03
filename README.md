@@ -3,7 +3,7 @@
 BOARD STATUS: WORK IN PROGRESS - DO NOT BUILT!
 
 The freeDSPx ADAT IO x4 is a digital IO expansion board for the freeDSP family. 
-It provides 4 Lightpipe Inputs and 4 Lightpipe outputs via Toslinks.
+It provides 4 Lightpipe inputs and 4 Lightpipe outputs via Toslinks.
 
 ## License
 
