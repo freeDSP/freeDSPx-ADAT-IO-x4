@@ -1027,13 +1027,13 @@ F 3 "" H 10500 8400 50  0000 C CNN
 	1    10500 8400
 	1    0    0    -1  
 $EndComp
-Text Label 11200 8850 2    39   ~ 0
-SW:1
-Text Label 11200 8950 2    39   ~ 0
-SW:2
-Text Label 11200 9050 2    39   ~ 0
-SW:3
 Text Label 11200 9150 2    39   ~ 0
+SW:1
+Text Label 11200 9050 2    39   ~ 0
+SW:2
+Text Label 11200 8950 2    39   ~ 0
+SW:3
+Text Label 11200 8850 2    39   ~ 0
 SW:4
 Text Label 11950 1300 0    39   ~ 0
 ADATIN:1
