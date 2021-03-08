@@ -1,0 +1,2141 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "ADAT I8S Reciever Part"
+Date "2021-02-11"
+Rev "0.1"
+Comp "CyberPit HILO. 2021"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	10400 2075 10600 2075
+Wire Wire Line
+	10600 1375 10600 1475
+Wire Wire Line
+	10400 1975 10600 1975
+Wire Wire Line
+	10400 1875 10600 1875
+Connection ~ 10600 1975
+Wire Wire Line
+	10400 1775 10600 1775
+Connection ~ 10600 1875
+Wire Wire Line
+	10400 1675 10600 1675
+Connection ~ 10600 1775
+Wire Wire Line
+	10400 1575 10600 1575
+Connection ~ 10600 1675
+Wire Wire Line
+	10400 1475 10600 1475
+Connection ~ 10600 1575
+Wire Wire Line
+	10400 1375 10600 1375
+Connection ~ 10600 1475
+Text GLabel 9500 2075 0    51   Input ~ 0
+DAC_MCK0
+Wire Wire Line
+	9900 1375 9800 1375
+Wire Wire Line
+	9800 1375 9800 1275
+Wire Wire Line
+	7925 2500 8025 2500
+Wire Wire Line
+	8025 2500 8025 2600
+Wire Wire Line
+	7925 2600 8025 2600
+Connection ~ 8025 2600
+Wire Wire Line
+	7425 2600 7325 2600
+Wire Wire Line
+	7325 2600 7325 2700
+Wire Wire Line
+	7925 1600 8025 1600
+Wire Wire Line
+	8025 1600 8025 1400
+Wire Wire Line
+	8025 1400 7325 1400
+Wire Wire Line
+	7325 1400 7325 1600
+Wire Wire Line
+	7325 1600 7425 1600
+Wire Wire Line
+	6825 1400 6925 1400
+Wire Wire Line
+	6825 1400 6825 1300
+Text GLabel 7025 1900 0    51   Input ~ 0
+SDATA0
+Text GLabel 7025 2000 0    51   Input ~ 0
+DAC_DAT0
+Text GLabel 7025 2100 0    51   Input ~ 0
+DAC_BCLK
+Text GLabel 7025 2400 0    51   Input ~ 0
+DAC_DAT2
+Text GLabel 8325 1800 2    51   Input ~ 0
+SDATA1
+Text GLabel 8325 1900 2    51   Input ~ 0
+DAC_DAT1
+Text GLabel 8325 2000 2    51   Input ~ 0
+DAC_LRCK
+Text GLabel 8325 2400 2    51   Input ~ 0
+SDATA2
+Text GLabel 8325 2300 2    51   Input ~ 0
+SDATA3
+Text GLabel 8325 2200 2    51   Input ~ 0
+DAC_DAT3
+Text GLabel 9500 1575 0    51   Input ~ 0
+DAC_DAT0
+Text GLabel 8325 2100 2    51   BiDi ~ 0
+DAC_SDA
+Text GLabel 7025 2300 0    51   BiDi ~ 0
+DAC_SCL
+Text GLabel 9500 1975 0    51   BiDi ~ 0
+DAC_SCL
+Text GLabel 9500 1875 0    51   BiDi ~ 0
+DAC_SDA
+Wire Wire Line
+	10400 3425 10600 3425
+Wire Wire Line
+	10600 2725 10600 2825
+Wire Wire Line
+	10400 3325 10600 3325
+Connection ~ 10600 3425
+Wire Wire Line
+	10400 3225 10600 3225
+Connection ~ 10600 3325
+Wire Wire Line
+	10400 3125 10600 3125
+Connection ~ 10600 3225
+Wire Wire Line
+	10400 3025 10600 3025
+Connection ~ 10600 3125
+Wire Wire Line
+	10400 2925 10600 2925
+Connection ~ 10600 3025
+Wire Wire Line
+	10400 2825 10600 2825
+Connection ~ 10600 2925
+Wire Wire Line
+	10400 2725 10450 2725
+Connection ~ 10600 2825
+Text GLabel 9500 3425 0    51   Input ~ 0
+DAC_MCK1
+Text GLabel 9500 5775 0    51   Input ~ 0
+DAC_LRCK
+Text GLabel 9500 5675 0    51   Input ~ 0
+DAC_BCLK
+Text GLabel 9500 2925 0    51   Input ~ 0
+DAC_DAT1
+Text GLabel 9500 3325 0    51   BiDi ~ 0
+DAC_SCL
+Text GLabel 9500 3225 0    51   BiDi ~ 0
+DAC_SDA
+Wire Wire Line
+	10400 4725 10600 4725
+Wire Wire Line
+	10600 4025 10600 4125
+Wire Wire Line
+	10400 4625 10600 4625
+Wire Wire Line
+	10400 4525 10600 4525
+Connection ~ 10600 4625
+Wire Wire Line
+	10400 4425 10600 4425
+Connection ~ 10600 4525
+Wire Wire Line
+	10400 4325 10600 4325
+Connection ~ 10600 4425
+Wire Wire Line
+	10400 4225 10600 4225
+Connection ~ 10600 4325
+Wire Wire Line
+	10400 4125 10600 4125
+Connection ~ 10600 4225
+Wire Wire Line
+	10400 4025 10600 4025
+Connection ~ 10600 4125
+Text GLabel 9500 4725 0    51   Input ~ 0
+DAC_MCK2
+Wire Wire Line
+	9900 4025 9800 4025
+Wire Wire Line
+	9800 4025 9800 3925
+Text GLabel 9500 4225 0    51   Input ~ 0
+DAC_DAT2
+Text GLabel 9500 4625 0    51   BiDi ~ 0
+DAC_SCL
+Text GLabel 9500 4525 0    51   BiDi ~ 0
+DAC_SDA
+Wire Wire Line
+	10400 6075 10600 6075
+Wire Wire Line
+	10600 5375 10600 5475
+Wire Wire Line
+	10400 5975 10600 5975
+Connection ~ 10600 6075
+Wire Wire Line
+	10400 5875 10600 5875
+Connection ~ 10600 5975
+Wire Wire Line
+	10400 5775 10600 5775
+Connection ~ 10600 5875
+Wire Wire Line
+	10400 5675 10600 5675
+Connection ~ 10600 5775
+Wire Wire Line
+	10400 5575 10600 5575
+Connection ~ 10600 5675
+Wire Wire Line
+	10400 5475 10600 5475
+Connection ~ 10600 5575
+Wire Wire Line
+	10400 5375 10450 5375
+Connection ~ 10600 5475
+Text GLabel 9500 6075 0    51   Input ~ 0
+DAC_MCK3
+Wire Wire Line
+	9900 5375 9850 5375
+Wire Wire Line
+	9600 5375 9600 5275
+Text GLabel 9500 5575 0    51   Input ~ 0
+DAC_DAT3
+Text GLabel 9500 5975 0    51   BiDi ~ 0
+DAC_SCL
+Text GLabel 9500 5875 0    51   BiDi ~ 0
+DAC_SDA
+$Comp
+L Device:C C15
+U 1 1 602ADAD3
+P 2375 3350
+F 0 "C15" H 2400 3450 50  0000 L CNN
+F 1 "100n" H 2400 3250 50  0000 L CNN
+F 2 "fdsp_capacitor:C_0805_HandSoldering" H 2413 3200 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B300/X7R-G0805%23YAG.pdf" H 2375 3350 50  0001 C CNN
+F 4 "X7R-G0805 100N" H 2375 3350 60  0001 C CNN "Reichelt_Best_Nr"
+	1    2375 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10600 1975 10600 2075
+Wire Wire Line
+	10600 1875 10600 1975
+Wire Wire Line
+	10600 1775 10600 1875
+Wire Wire Line
+	10600 1675 10600 1775
+Wire Wire Line
+	10600 1575 10600 1675
+Wire Wire Line
+	10600 1475 10600 1575
+Wire Wire Line
+	8025 2600 8025 2700
+Wire Wire Line
+	10600 3425 10600 3525
+Wire Wire Line
+	10600 3325 10600 3425
+Wire Wire Line
+	10600 3225 10600 3325
+Wire Wire Line
+	10600 3125 10600 3225
+Wire Wire Line
+	10600 3025 10600 3125
+Wire Wire Line
+	10600 2925 10600 3025
+Wire Wire Line
+	10600 2825 10600 2925
+Wire Wire Line
+	10600 4625 10600 4725
+Wire Wire Line
+	10600 4525 10600 4625
+Wire Wire Line
+	10600 4425 10600 4525
+Wire Wire Line
+	10600 4325 10600 4425
+Wire Wire Line
+	10600 4225 10600 4325
+Wire Wire Line
+	10600 4125 10600 4225
+Wire Wire Line
+	10600 6075 10600 6175
+Wire Wire Line
+	10600 5975 10600 6075
+Wire Wire Line
+	10600 5875 10600 5975
+Wire Wire Line
+	10600 5775 10600 5875
+Wire Wire Line
+	10600 5675 10600 5775
+Wire Wire Line
+	10600 5575 10600 5675
+Wire Wire Line
+	10600 5475 10600 5575
+$Comp
+L Device:C C13
+U 1 1 602C16FD
+P 2950 6000
+F 0 "C13" H 3050 6100 50  0000 L CNN
+F 1 "100n" H 3050 6000 50  0000 L CNN
+F 2 "fdsp_capacitor:C_0805_HandSoldering" H 2988 5850 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B300/X7R-G0805%23YAG.pdf" H 2950 6000 50  0001 C CNN
+F 4 "X7R-G0805 100N" H 2950 6000 60  0001 C CNN "Reichelt_Best_Nr"
+	1    2950 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R57
+U 1 1 602C174B
+P 9650 5675
+F 0 "R57" V 9600 5875 50  0000 C CNN
+F 1 "33" V 9650 5675 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 5675 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 5675 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 5675 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 5675
+	0    1    1    0   
+$EndComp
+$Comp
+L PLR135-T10:PLR135-T10 U7
+U 1 1 60353CC6
+P 1600 5350
+F 0 "U7" H 1400 5700 60  0000 C CNN
+F 1 "PLR135/T10" H 1600 5300 60  0000 C CNN
+F 2 "MyLibrary:PLR135-T10" H 1600 5350 60  0001 C CNN
+F 3 "" H 1600 5350 60  0000 C CNN
+	1    1600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J?
+U 1 1 603A310D
+P 10100 4325
+AR Path="/60262604/603A310D" Ref="J?"  Part="1" 
+AR Path="/60262E22/603A310D" Ref="J14"  Part="1" 
+F 0 "J14" H 10150 4725 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 10050 3825 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 10100 4325 50  0001 C CNN
+F 3 "~" H 10100 4325 50  0001 C CNN
+	1    10100 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J?
+U 1 1 603A3113
+P 10100 3025
+AR Path="/60262604/603A3113" Ref="J?"  Part="1" 
+AR Path="/60262E22/603A3113" Ref="J13"  Part="1" 
+F 0 "J13" H 10150 3425 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 10050 2525 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 10100 3025 50  0001 C CNN
+F 3 "~" H 10100 3025 50  0001 C CNN
+	1    10100 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J?
+U 1 1 603A3119
+P 10100 1675
+AR Path="/60262604/603A3119" Ref="J?"  Part="1" 
+AR Path="/60262E22/603A3119" Ref="J12"  Part="1" 
+F 0 "J12" H 10150 2075 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 10050 1175 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 10100 1675 50  0001 C CNN
+F 3 "~" H 10100 1675 50  0001 C CNN
+	1    10100 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J?
+U 1 1 603A311F
+P 10100 5675
+AR Path="/60262604/603A311F" Ref="J?"  Part="1" 
+AR Path="/60262E22/603A311F" Ref="J15"  Part="1" 
+F 0 "J15" H 10150 6075 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 10000 5175 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 10100 5675 50  0001 C CNN
+F 3 "~" H 10100 5675 50  0001 C CNN
+	1    10100 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J?
+U 1 1 603A312B
+P 7625 2100
+AR Path="/60262604/603A312B" Ref="J?"  Part="1" 
+AR Path="/60262E22/603A312B" Ref="J10"  Part="1" 
+F 0 "J10" H 7675 2700 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 7725 2900 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x13_P2.54mm_Vertical" H 7625 2100 50  0001 C CNN
+F 3 "~" H 7625 2100 50  0001 C CNN
+	1    7625 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L My_Library:V1402 U9
+U 1 1 607F3193
+P 4000 5200
+F 0 "U9" H 4000 5500 50  0000 C CNN
+F 1 "V1402" H 4000 5400 50  0000 C CNN
+F 2 "Package_SO:SOP-24_7.5x15.4mm_P1.27mm" H 4000 3750 50  0001 C CNN
+F 3 "https://www.coolaudio.com/docs/COOLAUDIO_V1401_DATASHEET.pdf" H 4050 5025 50  0001 C CNN
+	1    4000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5200 2050 5200
+$Comp
+L fdsp_power:GNDD #PWR042
+U 1 1 60806015
+P 2250 5400
+F 0 "#PWR042" H 2250 5150 50  0001 C CNN
+F 1 "GNDD" H 2250 5250 50  0000 C CNN
+F 2 "" H 2250 5400 60  0000 C CNN
+F 3 "" H 2250 5400 60  0000 C CNN
+	1    2250 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5300 2100 5300
+Wire Wire Line
+	2850 5000 2850 5100
+$Comp
+L fdsp_power:GNDD #PWR046
+U 1 1 6081170B
+P 3450 6700
+F 0 "#PWR046" H 3450 6450 50  0001 C CNN
+F 1 "GNDD" H 3450 6550 50  0000 C CNN
+F 2 "" H 3450 6700 60  0000 C CNN
+F 3 "" H 3450 6700 60  0000 C CNN
+	1    3450 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5800 3450 5800
+Wire Wire Line
+	3550 6600 3450 6600
+Wire Wire Line
+	3450 6600 3450 6700
+Wire Wire Line
+	3550 5900 3450 5900
+Wire Wire Line
+	3450 5900 3450 5800
+Connection ~ 3450 5800
+Wire Wire Line
+	3450 5800 2950 5800
+$Comp
+L fdsp_power:GNDD #PWR045
+U 1 1 608FC8C0
+P 2950 6150
+F 0 "#PWR045" H 2950 5900 50  0001 C CNN
+F 1 "GNDD" H 2950 6000 50  0000 C CNN
+F 2 "" H 2950 6150 60  0000 C CNN
+F 3 "" H 2950 6150 60  0000 C CNN
+	1    2950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR064
+U 1 1 60915087
+P 10600 2075
+F 0 "#PWR064" H 10600 1825 50  0001 C CNN
+F 1 "GNDD" H 10600 1925 50  0000 C CNN
+F 2 "" H 10600 2075 60  0000 C CNN
+F 3 "" H 10600 2075 60  0000 C CNN
+	1    10600 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR066
+U 1 1 609207B7
+P 10600 4725
+F 0 "#PWR066" H 10600 4475 50  0001 C CNN
+F 1 "GNDD" H 10600 4575 50  0000 C CNN
+F 2 "" H 10600 4725 60  0000 C CNN
+F 3 "" H 10600 4725 60  0000 C CNN
+	1    10600 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR067
+U 1 1 6092BA21
+P 10600 6175
+F 0 "#PWR067" H 10600 5925 50  0001 C CNN
+F 1 "GNDD" H 10600 6025 50  0000 C CNN
+F 2 "" H 10600 6175 60  0000 C CNN
+F 3 "" H 10600 6175 60  0000 C CNN
+	1    10600 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR065
+U 1 1 6093091F
+P 10600 3525
+F 0 "#PWR065" H 10600 3275 50  0001 C CNN
+F 1 "GNDD" H 10600 3375 50  0000 C CNN
+F 2 "" H 10600 3525 60  0000 C CNN
+F 3 "" H 10600 3525 60  0000 C CNN
+	1    10600 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VDAC #PWR063
+U 1 1 60936602
+P 9800 3925
+F 0 "#PWR063" H 9950 3875 50  0001 C CNN
+F 1 "+3.3VDAC" H 9800 4075 50  0000 C CNN
+F 2 "" H 9800 3925 50  0001 C CNN
+F 3 "" H 9800 3925 50  0001 C CNN
+	1    9800 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VDAC #PWR062
+U 1 1 60950D95
+P 9800 1275
+F 0 "#PWR062" H 9950 1225 50  0001 C CNN
+F 1 "+3.3VDAC" H 9800 1425 50  0000 C CNN
+F 2 "" H 9800 1275 50  0001 C CNN
+F 3 "" H 9800 1275 50  0001 C CNN
+	1    9800 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VDAC #PWR060
+U 1 1 60955BFA
+P 9600 2575
+F 0 "#PWR060" H 9750 2525 50  0001 C CNN
+F 1 "+3.3VDAC" H 9600 2725 50  0000 C CNN
+F 2 "" H 9600 2575 50  0001 C CNN
+F 3 "" H 9600 2575 50  0001 C CNN
+	1    9600 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VDAC #PWR061
+U 1 1 6095AA4D
+P 9600 5275
+F 0 "#PWR061" H 9750 5225 50  0001 C CNN
+F 1 "+3.3VDAC" H 9600 5425 50  0000 C CNN
+F 2 "" H 9600 5275 50  0001 C CNN
+F 3 "" H 9600 5275 50  0001 C CNN
+	1    9600 5275
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR055
+U 1 1 60986AD5
+P 7325 2700
+F 0 "#PWR055" H 7325 2450 50  0001 C CNN
+F 1 "GNDD" H 7325 2550 50  0000 C CNN
+F 2 "" H 7325 2700 60  0000 C CNN
+F 3 "" H 7325 2700 60  0000 C CNN
+	1    7325 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR058
+U 1 1 609956D0
+P 8025 2700
+F 0 "#PWR058" H 8025 2450 50  0001 C CNN
+F 1 "GNDD" H 8025 2550 50  0000 C CNN
+F 2 "" H 8025 2700 60  0000 C CNN
+F 3 "" H 8025 2700 60  0000 C CNN
+	1    8025 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR039
+U 1 1 6099A547
+P 2825 3850
+F 0 "#PWR039" H 2825 3600 50  0001 C CNN
+F 1 "GNDD" H 2825 3700 50  0000 C CNN
+F 2 "" H 2825 3850 60  0000 C CNN
+F 3 "" H 2825 3850 60  0000 C CNN
+	1    2825 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR054
+U 1 1 609A4B26
+P 6825 1300
+F 0 "#PWR054" H 6825 1150 50  0001 C CNN
+F 1 "VDD" H 6825 1450 50  0000 C CNN
+F 2 "" H 6825 1300 50  0001 C CNN
+F 3 "" H 6825 1300 50  0001 C CNN
+	1    6825 1300
+	1    0    0    -1  
+$EndComp
+Text Label 1075 1175 0    50   ~ 0
+BCLK
+Wire Wire Line
+	5350 5600 4950 5600
+Text Label 5350 5600 2    50   ~ 0
+256fs
+Wire Wire Line
+	5350 5700 4750 5700
+Text Label 5350 5700 2    50   ~ 0
+BCLK
+Text GLabel 9500 1475 0    51   Output ~ 0
+SDATA0
+Text GLabel 9500 2825 0    51   Output ~ 0
+SDATA1
+Text GLabel 9500 4125 0    51   Output ~ 0
+SDATA2
+Text GLabel 9500 5475 0    51   Output ~ 0
+SDATA3
+$Comp
+L Device:R R58
+U 1 1 60AE466E
+P 9650 5775
+F 0 "R58" V 9600 5975 50  0000 C CNN
+F 1 "33" V 9650 5775 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 5775 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 5775 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 5775 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 5775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 5675 9900 5675
+Wire Wire Line
+	9800 5775 9900 5775
+Text GLabel 9500 1775 0    51   Input ~ 0
+DAC_LRCK
+Text GLabel 9500 1675 0    51   Input ~ 0
+DAC_BCLK
+$Comp
+L Device:R R51
+U 1 1 60B588E0
+P 9650 1675
+F 0 "R51" V 9600 1875 50  0000 C CNN
+F 1 "33" V 9650 1675 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 1675 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 1675 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 1675 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 1675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R52
+U 1 1 60B588E7
+P 9650 1775
+F 0 "R52" V 9600 1975 50  0000 C CNN
+F 1 "33" V 9650 1775 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 1775 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 1775 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 1775 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 1775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 1675 9900 1675
+Wire Wire Line
+	9800 1775 9900 1775
+Text GLabel 9500 3125 0    51   Input ~ 0
+DAC_LRCK
+Text GLabel 9500 3025 0    51   Input ~ 0
+DAC_BCLK
+$Comp
+L Device:R R53
+U 1 1 60B606F0
+P 9650 3025
+F 0 "R53" V 9600 3225 50  0000 C CNN
+F 1 "33" V 9650 3025 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 3025 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 3025 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 3025 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 3025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R54
+U 1 1 60B606F7
+P 9650 3125
+F 0 "R54" V 9600 3325 50  0000 C CNN
+F 1 "33" V 9650 3125 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 3125 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 3125 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 3125 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 3025 9900 3025
+Wire Wire Line
+	9800 3125 9900 3125
+Text GLabel 9500 4425 0    51   Input ~ 0
+DAC_LRCK
+Text GLabel 9500 4325 0    51   Input ~ 0
+DAC_BCLK
+$Comp
+L Device:R R55
+U 1 1 60B687AF
+P 9650 4325
+F 0 "R55" V 9600 4525 50  0000 C CNN
+F 1 "33" V 9650 4325 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 4325 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 4325 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 4325 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 4325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R56
+U 1 1 60B687B6
+P 9650 4425
+F 0 "R56" V 9600 4625 50  0000 C CNN
+F 1 "33" V 9650 4425 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 9580 4425 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 9650 4425 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 9650 4425 60  0001 C CNN "Reichelt_Best_Nr"
+	1    9650 4425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 4325 9900 4325
+Wire Wire Line
+	9800 4425 9900 4425
+Wire Wire Line
+	9500 1475 9900 1475
+Wire Wire Line
+	9500 1575 9900 1575
+Wire Wire Line
+	9500 1875 9900 1875
+Wire Wire Line
+	9500 1975 9900 1975
+Wire Wire Line
+	9500 2075 9900 2075
+Wire Wire Line
+	9500 2825 9900 2825
+Wire Wire Line
+	9500 2925 9900 2925
+Wire Wire Line
+	9500 3225 9900 3225
+Wire Wire Line
+	9500 3325 9900 3325
+Wire Wire Line
+	9900 3425 9500 3425
+Wire Wire Line
+	9500 4525 9900 4525
+Wire Wire Line
+	9500 4625 9900 4625
+Wire Wire Line
+	9900 4725 9500 4725
+Wire Wire Line
+	9500 5875 9900 5875
+Wire Wire Line
+	9500 5975 9900 5975
+Wire Wire Line
+	9900 6075 9500 6075
+Wire Wire Line
+	9500 5475 9900 5475
+Wire Wire Line
+	9900 5575 9500 5575
+Wire Wire Line
+	9500 4125 9900 4125
+Wire Wire Line
+	9900 4225 9500 4225
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 60CD0F80
+P 7675 4800
+AR Path="/60262604/60CD0F80" Ref="J?"  Part="1" 
+AR Path="/60262E22/60CD0F80" Ref="J11"  Part="1" 
+F 0 "J11" H 7675 5300 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 8325 5425 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 7675 4800 50  0001 C CNN
+F 3 "~" H 7675 4800 50  0001 C CNN
+	1    7675 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7475 4700 7175 4700
+Wire Wire Line
+	7475 4900 7425 4900
+Wire Wire Line
+	7425 4900 7425 5450
+Wire Wire Line
+	8050 4400 8050 4900
+Wire Wire Line
+	7800 4200 7800 4250
+Wire Wire Line
+	7800 4250 7350 4250
+Wire Wire Line
+	7350 4250 7350 4800
+Wire Wire Line
+	7350 4800 7475 4800
+Connection ~ 7800 4250
+Wire Wire Line
+	7975 4900 8050 4900
+Wire Wire Line
+	8050 4900 8050 5450
+Text GLabel 8225 4600 2    51   Input ~ 0
+~RX_RES
+Wire Wire Line
+	7975 4600 8225 4600
+Text GLabel 7175 4500 0    51   BiDi ~ 0
+DAC_SCL
+Text GLabel 7175 4400 0    51   BiDi ~ 0
+DAC_SDA
+Wire Wire Line
+	7475 4400 7175 4400
+Wire Wire Line
+	7175 4500 7475 4500
+Text GLabel 6800 5000 0    51   Output ~ 0
+DAC_DAT2
+Wire Wire Line
+	8225 5000 7975 5000
+Wire Wire Line
+	7100 5100 7175 5100
+Text GLabel 8225 4700 2    51   Output ~ 0
+DAC_DAT1
+Wire Wire Line
+	7975 4700 8225 4700
+Wire Wire Line
+	6800 5000 7475 5000
+Text GLabel 7100 4600 0    51   Output ~ 0
+DAC_DAT0
+Wire Wire Line
+	7100 4600 7475 4600
+Text Notes 7330 3760 0    50   ~ 10
+SMD A/B I6S HEADER
+Wire Notes Line
+	7200 3650 7200 3800
+Wire Notes Line
+	8250 3800 8250 3650
+Wire Notes Line
+	8250 3650 7200 3650
+Wire Notes Line
+	7200 3800 8250 3800
+Text Notes 7450 3900 0    50   ~ 0
+(I6S OUTPUT)
+$Comp
+L power:+3.3VDAC #PWR059
+U 1 1 60CED653
+P 8325 1300
+F 0 "#PWR059" H 8475 1250 50  0001 C CNN
+F 1 "+3.3VDAC" H 8325 1450 50  0000 C CNN
+F 2 "" H 8325 1300 50  0001 C CNN
+F 3 "" H 8325 1300 50  0001 C CNN
+	1    8325 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 1400 8325 1400
+$Comp
+L dk_Ferrite-Beads-and-Chips:BLM21PG331SN1D FB1
+U 1 1 60D247BD
+P 7125 1400
+F 0 "FB1" H 7125 1550 60  0000 C CNN
+F 1 "BLM21PG331SN1D" H 6825 1250 60  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" H 7325 1600 60  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdata/8796738977822/ENFA0005.pdf" H 7325 1700 60  0001 L CNN
+F 4 "490-5988-1-ND" H 7325 1800 60  0001 L CNN "Digi-Key_PN"
+F 5 "BLM21PG331SN1D" H 7325 1900 60  0001 L CNN "MPN"
+F 6 "Filters" H 7325 2000 60  0001 L CNN "Category"
+F 7 "Ferrite Beads and Chips" H 7325 2100 60  0001 L CNN "Family"
+F 8 "https://www.murata.com/en-us/products/productdata/8796738977822/ENFA0005.pdf" H 7325 2200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/murata-electronics-north-america/BLM21PG331SN1D/490-5988-1-ND/3845188" H 7325 2300 60  0001 L CNN "DK_Detail_Page"
+F 10 "FERRITE BEAD 330 OHM 0805 1LN" H 7325 2400 60  0001 L CNN "Description"
+F 11 "Murata Electronics North America" H 7325 2500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7325 2600 60  0001 L CNN "Status"
+	1    7125 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 1300 8325 1400
+$Comp
+L power:+3.3VDAC #PWR056
+U 1 1 60D67B7F
+P 7800 4200
+F 0 "#PWR056" H 7950 4150 50  0001 C CNN
+F 1 "+3.3VDAC" H 7800 4350 50  0000 C CNN
+F 2 "" H 7800 4200 50  0001 C CNN
+F 3 "" H 7800 4200 50  0001 C CNN
+	1    7800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR057
+U 1 1 60D81A4F
+P 7725 5450
+F 0 "#PWR057" H 7725 5200 50  0001 C CNN
+F 1 "GNDD" H 7725 5300 50  0000 C CNN
+F 2 "" H 7725 5450 60  0000 C CNN
+F 3 "" H 7725 5450 60  0000 C CNN
+	1    7725 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR052
+U 1 1 60D9C433
+P 2375 3500
+F 0 "#PWR052" H 2375 3250 50  0001 C CNN
+F 1 "GNDD" H 2375 3350 50  0000 C CNN
+F 2 "" H 2375 3500 60  0000 C CNN
+F 3 "" H 2375 3500 60  0000 C CNN
+	1    2375 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R50
+U 1 1 60DC6A77
+P 8075 2000
+F 0 "R50" V 8025 2175 50  0000 C CNN
+F 1 "33" V 8075 2000 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 8005 2000 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 8075 2000 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 8075 2000 60  0001 C CNN "Reichelt_Best_Nr"
+	1    8075 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7925 1800 8325 1800
+Wire Wire Line
+	7925 1900 8325 1900
+Wire Wire Line
+	7925 2100 8325 2100
+Wire Wire Line
+	7925 2200 8325 2200
+Wire Wire Line
+	7925 2300 8325 2300
+$Comp
+L Device:R R49
+U 1 1 60E56D45
+P 7175 2100
+F 0 "R49" V 7125 2275 50  0000 C CNN
+F 1 "33" V 7175 2100 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 7105 2100 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 7175 2100 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 7175 2100 60  0001 C CNN "Reichelt_Best_Nr"
+	1    7175 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7325 1800 7425 1800
+Wire Wire Line
+	7025 1900 7425 1900
+Wire Wire Line
+	7025 2000 7425 2000
+Wire Wire Line
+	7025 2300 7425 2300
+Wire Wire Line
+	7025 2400 7425 2400
+Wire Wire Line
+	7025 2500 7425 2500
+Wire Wire Line
+	7325 2100 7425 2100
+NoConn ~ 7425 2200
+Wire Wire Line
+	7925 2400 8325 2400
+Connection ~ 7325 1400
+Connection ~ 8025 1400
+Text GLabel 6800 5100 0    51   Input ~ 0
+DAC_BCLK
+$Comp
+L Device:R R47
+U 1 1 60F7D790
+P 6950 5100
+F 0 "R47" V 6900 5300 50  0000 C CNN
+F 1 "33" V 6950 5100 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 6880 5100 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 6950 5100 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 6950 5100 60  0001 C CNN "Reichelt_Best_Nr"
+	1    6950 5100
+	0    1    1    0   
+$EndComp
+Text GLabel 6800 5200 0    51   Input ~ 0
+DAC_LRCK
+$Comp
+L Device:R R48
+U 1 1 60F8DDED
+P 6950 5200
+F 0 "R48" V 7000 5400 50  0000 C CNN
+F 1 "33" V 6950 5200 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 6880 5200 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 6950 5200 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 6950 5200 60  0001 C CNN "Reichelt_Best_Nr"
+	1    6950 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 5200 7275 5200
+Text GLabel 6800 5300 0    51   Input ~ 0
+DAC_MCK0
+Wire Wire Line
+	6800 5300 7375 5300
+Text GLabel 7025 2500 0    51   Input ~ 0
+DAC_MCK0
+Wire Wire Line
+	4450 5900 5350 5900
+Wire Wire Line
+	4450 6000 5350 6000
+Wire Wire Line
+	4450 6100 5350 6100
+Wire Wire Line
+	4450 6200 5350 6200
+$Comp
+L Device:LED D?
+U 1 1 612D2633
+P 4700 7150
+AR Path="/60262604/612D2633" Ref="D?"  Part="1" 
+AR Path="/60262E22/612D2633" Ref="D4"  Part="1" 
+F 0 "D4" V 4750 7000 50  0000 R CNN
+F 1 "RED_LED" V 4650 7000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 7150 50  0001 C CNN
+F 3 "~" H 4700 7150 50  0001 C CNN
+	1    4700 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612D263D
+P 4700 6800
+AR Path="/60262604/612D263D" Ref="R?"  Part="1" 
+AR Path="/60262E22/612D263D" Ref="R37"  Part="1" 
+F 0 "R37" V 4600 6800 50  0000 C CNN
+F 1 "3.3k" V 4700 6800 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4630 6800 50  0001 C CNN
+F 3 "~" H 4700 6800 50  0001 C CNN
+	1    4700 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 6950 4700 7000
+Wire Wire Line
+	4450 6600 4700 6600
+Wire Wire Line
+	4700 6600 4700 6650
+$Comp
+L fdsp_power:GNDD #PWR050
+U 1 1 612F5018
+P 4700 7300
+F 0 "#PWR050" H 4700 7050 50  0001 C CNN
+F 1 "GNDD" H 4700 7150 50  0000 C CNN
+F 2 "" H 4700 7300 60  0000 C CNN
+F 3 "" H 4700 7300 60  0000 C CNN
+	1    4700 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PLT133-T10W:PLT133-T10W U6
+U 1 1 61307EA3
+P 1600 4450
+F 0 "U6" H 1400 4800 60  0000 C CNN
+F 1 "PLT133/T10W" H 1600 4400 60  0000 C CNN
+F 2 "MyLibrary:PLT133-T10W" H 1600 4450 60  0001 C CNN
+F 3 "" H 1600 4450 60  0000 C CNN
+	1    1600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR041
+U 1 1 613093D4
+P 2100 4450
+F 0 "#PWR041" H 2100 4200 50  0001 C CNN
+F 1 "GNDD" H 2100 4300 50  0000 C CNN
+F 2 "" H 2100 4450 60  0000 C CNN
+F 3 "" H 2100 4450 60  0000 C CNN
+	1    2100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4400 2100 4400
+Wire Wire Line
+	2100 4400 2100 4450
+Wire Wire Line
+	2100 4100 2100 4200
+$Comp
+L dk_Fixed-Inductors:82103C L1
+U 1 1 61331CA9
+P 2550 5100
+F 0 "L1" H 2450 5400 60  0000 C CNN
+F 1 "MLZ2012M470WTD25" H 2300 5250 60  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" H 2750 5300 60  0001 L CNN
+F 3 "https://www.murata-ps.com/data/magnetics/kmp_8200c.pdf" H 2750 5400 60  0001 L CNN
+F 4 "811-2473-1-ND" H 2750 5500 60  0001 L CNN "Digi-Key_PN"
+F 5 "82103C" H 2750 5600 60  0001 L CNN "MPN"
+F 6 "Inductors, Coils, Chokes" H 2750 5700 60  0001 L CNN "Category"
+F 7 "Fixed Inductors" H 2750 5800 60  0001 L CNN "Family"
+F 8 "https://www.murata-ps.com/data/magnetics/kmp_8200c.pdf" H 2750 5900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/murata-power-solutions-inc/82103C/811-2473-1-ND/3178544" H 2750 6000 60  0001 L CNN "DK_Detail_Page"
+F 10 "FIXED IND 10UH 500MA 400 MOHM" H 2750 6100 60  0001 L CNN "Description"
+F 11 "Murata Power Solutions Inc." H 2750 6200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2750 6300 60  0001 L CNN "Status"
+	1    2550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5100 2250 5100
+Wire Wire Line
+	2750 5100 2850 5100
+$Comp
+L Device:C C11
+U 1 1 613913F2
+P 2250 5250
+F 0 "C11" H 2000 5275 50  0000 L CNN
+F 1 "100n" H 2000 5350 50  0000 L CNN
+F 2 "fdsp_capacitor:C_0805_HandSoldering" H 2288 5100 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B300/X7R-G0805%23YAG.pdf" H 2250 5250 50  0001 C CNN
+F 4 "X7R-G0805 100N" H 2250 5250 60  0001 C CNN "Reichelt_Best_Nr"
+	1    2250 5250
+	-1   0    0    1   
+$EndComp
+Connection ~ 2250 5100
+Wire Wire Line
+	2250 5100 2350 5100
+Wire Wire Line
+	2250 5400 2100 5400
+Wire Wire Line
+	2100 5300 2100 5400
+Connection ~ 2250 5400
+$Comp
+L Device:R R28
+U 1 1 6140B425
+P 4550 4850
+F 0 "R28" V 4500 5000 50  0000 C CNN
+F 1 "33" V 4550 4850 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4480 4850 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 4550 4850 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 4550 4850 60  0001 C CNN "Reichelt_Best_Nr"
+	1    4550 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5000 4550 5200
+Wire Wire Line
+	4550 5200 4450 5200
+Wire Wire Line
+	4550 4700 4550 4300
+Wire Wire Line
+	4550 4300 2050 4300
+$Comp
+L Device:C C12
+U 1 1 61499259
+P 2300 4200
+F 0 "C12" V 2450 4050 50  0000 L CNN
+F 1 "100n" V 2350 3950 50  0000 L CNN
+F 2 "fdsp_capacitor:C_0805_HandSoldering" H 2338 4050 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B300/X7R-G0805%23YAG.pdf" H 2300 4200 50  0001 C CNN
+F 4 "X7R-G0805 100N" H 2300 4200 60  0001 C CNN "Reichelt_Best_Nr"
+	1    2300 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 4200 2450 4400
+Wire Wire Line
+	2450 4400 2100 4400
+Connection ~ 2100 4400
+Wire Wire Line
+	2050 4200 2100 4200
+Connection ~ 2100 4200
+Wire Wire Line
+	2100 4200 2150 4200
+Text Notes 9640 835  0    50   ~ 10
+FreeDSP STD HEADERS
+Wire Notes Line
+	9600 725  9600 875 
+Wire Notes Line
+	10650 875  10650 725 
+Wire Notes Line
+	10650 725  9600 725 
+Wire Notes Line
+	9600 875  10650 875 
+Text Notes 9850 975  0    50   ~ 0
+(I2S x4 OUTPUT)
+Text Notes 7265 860  0    50   ~ 10
+CLASSIC I8S HEADER
+Wire Notes Line
+	7125 750  7125 900 
+Wire Notes Line
+	8175 900  8175 750 
+Wire Notes Line
+	8175 750  7125 750 
+Wire Notes Line
+	7125 900  8175 900 
+Text Notes 7375 1000 0    50   ~ 0
+(I8S I/O)
+Wire Wire Line
+	4700 6600 5250 6600
+Connection ~ 4700 6600
+Text Label 5250 6600 2    50   ~ 0
+SMUX
+Wire Wire Line
+	2900 5400 2600 5400
+Text Label 2600 5400 0    50   ~ 0
+SMUX
+$Comp
+L Device:R R26
+U 1 1 615A58B1
+P 3050 5400
+F 0 "R26" V 2950 5425 50  0000 C CNN
+F 1 "NOP" V 3050 5400 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 2980 5400 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 3050 5400 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 3050 5400 60  0001 C CNN "Reichelt_Best_Nr"
+	1    3050 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 5400 3300 5400
+$Comp
+L Device:R R?
+U 1 1 615E446C
+P 3300 5550
+AR Path="/60262604/615E446C" Ref="R?"  Part="1" 
+AR Path="/60262E22/615E446C" Ref="R27"  Part="1" 
+F 0 "R27" V 3400 5500 50  0000 C CNN
+F 1 "10k" V 3300 5550 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 3230 5550 50  0001 C CNN
+F 3 "~" H 3300 5550 50  0001 C CNN
+	1    3300 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 5400
+Wire Wire Line
+	3300 5400 3550 5400
+Wire Wire Line
+	3300 5700 3300 6100
+Wire Wire Line
+	3300 6600 3450 6600
+Connection ~ 3450 6600
+Wire Wire Line
+	3550 6300 3300 6300
+Connection ~ 3300 6300
+Wire Wire Line
+	3300 6300 3300 6400
+Wire Wire Line
+	3550 6400 3300 6400
+Connection ~ 3300 6400
+Wire Wire Line
+	3300 6400 3300 6500
+Wire Wire Line
+	3550 6100 3300 6100
+Connection ~ 3300 6100
+Wire Wire Line
+	3300 6100 3300 6300
+Wire Wire Line
+	3550 6200 3450 6200
+Wire Wire Line
+	3450 6200 3450 5900
+Connection ~ 3450 5900
+$Comp
+L Device:R R30
+U 1 1 616C0A2A
+P 4600 5600
+F 0 "R30" V 4550 5800 50  0000 C CNN
+F 1 "NOP" V 4600 5600 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4530 5600 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 4600 5600 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 4600 5600 60  0001 C CNN "Reichelt_Best_Nr"
+	1    4600 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 616D785E
+P 4600 5500
+F 0 "R29" V 4550 5700 50  0000 C CNN
+F 1 "33" V 4600 5500 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4530 5500 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 4600 5500 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 4600 5500 60  0001 C CNN "Reichelt_Best_Nr"
+	1    4600 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 5600 4950 5600
+Wire Wire Line
+	4950 5600 4950 5500
+Wire Wire Line
+	4950 5500 4750 5500
+Wire Wire Line
+	3550 6500 3300 6500
+Connection ~ 3300 6500
+Wire Wire Line
+	3300 6500 3300 6600
+$Comp
+L Device:LED D?
+U 1 1 6174C384
+P 5100 4600
+AR Path="/60262604/6174C384" Ref="D?"  Part="1" 
+AR Path="/60262E22/6174C384" Ref="D5"  Part="1" 
+F 0 "D5" V 5150 4450 50  0000 R CNN
+F 1 "GRN_LED" V 5075 4475 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 4600 50  0001 C CNN
+F 3 "~" H 5100 4600 50  0001 C CNN
+	1    5100 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6174C38E
+P 5100 4950
+AR Path="/60262604/6174C38E" Ref="R?"  Part="1" 
+AR Path="/60262E22/6174C38E" Ref="R46"  Part="1" 
+F 0 "R46" V 5050 4750 50  0000 C CNN
+F 1 "3.3k" V 5100 4950 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 5030 4950 50  0001 C CNN
+F 3 "~" H 5100 4950 50  0001 C CNN
+	1    5100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4750 5100 4800
+Wire Wire Line
+	5100 5100 5100 5400
+Wire Wire Line
+	5100 5400 4450 5400
+Text Notes 4630 4640 0    79   ~ 16
+LOCK
+Wire Notes Line style solid
+	4600 4480 4600 4680
+Wire Notes Line style solid
+	4600 4680 5000 4680
+Wire Notes Line style solid
+	5000 4680 5000 4480
+Wire Notes Line style solid
+	5000 4480 4600 4480
+Text Notes 4230 7210 0    79   ~ 16
+MUTE
+Wire Notes Line style solid
+	4200 7050 4200 7250
+Wire Notes Line style solid
+	4200 7250 4600 7250
+Wire Notes Line style solid
+	4600 7250 4600 7050
+Wire Notes Line style solid
+	4600 7050 4200 7050
+Text Notes 780  5350 0    79   ~ 16
+ADAT\nINPUT
+Wire Notes Line style solid
+	765  5090 765  5360
+Wire Notes Line style solid
+	765  5360 1165 5360
+Wire Notes Line style solid
+	1165 5360 1165 5090
+Wire Notes Line style solid
+	1165 5090 765  5090
+$Comp
+L 74xx:74LS541 U10
+U 1 1 619A1A5B
+P 4150 2200
+F 0 "U10" H 3900 2850 50  0000 C CNN
+F 1 "74LVC541A" H 4400 1550 50  0000 C CNN
+F 2 "Myfootprints:TSSOP-20_W4.4mm" H 4150 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS541" H 4150 2200 50  0001 C CNN
+	1    4150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR048
+U 1 1 619E0B79
+P 4150 1350
+F 0 "#PWR048" H 4150 1200 50  0001 C CNN
+F 1 "VDD" H 4150 1500 50  0000 C CNN
+F 2 "" H 4150 1350 50  0001 C CNN
+F 3 "" H 4150 1350 50  0001 C CNN
+	1    4150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR049
+U 1 1 619FACBA
+P 4150 3000
+F 0 "#PWR049" H 4150 2750 50  0001 C CNN
+F 1 "GNDD" H 4150 2850 50  0000 C CNN
+F 2 "" H 4150 3000 60  0000 C CNN
+F 3 "" H 4150 3000 60  0000 C CNN
+	1    4150 3000
+	1    0    0    -1  
+$EndComp
+Text Label 5350 5800 2    50   ~ 0
+LRCK
+Text Label 5350 5900 2    50   ~ 0
+DATA0
+Text Label 5350 6000 2    50   ~ 0
+DATA1
+Text Label 5350 6100 2    50   ~ 0
+DATA2
+Text Label 5350 6200 2    50   ~ 0
+DATA3
+$Comp
+L Device:R R32
+U 1 1 61DA5DB5
+P 4600 5800
+F 0 "R32" V 4550 6000 50  0000 C CNN
+F 1 "33" V 4600 5800 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4530 5800 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 4600 5800 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 4600 5800 60  0001 C CNN "Reichelt_Best_Nr"
+	1    4600 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 5800 5350 5800
+$Comp
+L Device:R R31
+U 1 1 61DC0F36
+P 4600 5700
+F 0 "R31" V 4550 5900 50  0000 C CNN
+F 1 "33" V 4600 5700 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4530 5700 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 4600 5700 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 4600 5700 60  0001 C CNN "Reichelt_Best_Nr"
+	1    4600 5700
+	0    1    1    0   
+$EndComp
+Connection ~ 4950 5600
+Text Label 1050 1650 0    50   ~ 0
+LRCK
+Wire Wire Line
+	3650 2600 3600 2600
+Wire Wire Line
+	3600 2600 3600 2700
+Wire Wire Line
+	3600 2700 3650 2700
+Wire Wire Line
+	3600 3000 4150 3000
+Wire Wire Line
+	3600 2700 3600 3000
+Connection ~ 3600 2700
+Connection ~ 4150 3000
+$Comp
+L power:+5VD #PWR040
+U 1 1 61F8B9B3
+P 2100 4100
+F 0 "#PWR040" H 2100 3950 50  0001 C CNN
+F 1 "+5VD" H 2100 4250 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR043
+U 1 1 61FE2132
+P 2850 5000
+F 0 "#PWR043" H 2850 4850 50  0001 C CNN
+F 1 "+5VD" H 2850 5150 50  0000 C CNN
+F 2 "" H 2850 5000 50  0001 C CNN
+F 3 "" H 2850 5000 50  0001 C CNN
+	1    2850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR053
+U 1 1 6201B015
+P 5100 4450
+F 0 "#PWR053" H 5100 4300 50  0001 C CNN
+F 1 "+5VD" H 5100 4600 50  0000 C CNN
+F 2 "" H 5100 4450 50  0001 C CNN
+F 3 "" H 5100 4450 50  0001 C CNN
+	1    5100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR044
+U 1 1 62053FD5
+P 2950 5750
+F 0 "#PWR044" H 2950 5600 50  0001 C CNN
+F 1 "+5VD" H 2950 5900 50  0000 C CNN
+F 2 "" H 2950 5750 50  0001 C CNN
+F 3 "" H 2950 5750 50  0001 C CNN
+	1    2950 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5750 2950 5800
+Wire Wire Line
+	2950 5850 2950 5800
+Connection ~ 2950 5800
+$Comp
+L Device:C C14
+U 1 1 621277FC
+P 3850 1350
+F 0 "C14" V 4075 1275 50  0000 L CNN
+F 1 "100n" V 4000 1250 50  0000 L CNN
+F 2 "fdsp_capacitor:C_0805_HandSoldering" H 3888 1200 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B300/X7R-G0805%23YAG.pdf" H 3850 1350 50  0001 C CNN
+F 4 "X7R-G0805 100N" H 3850 1350 60  0001 C CNN "Reichelt_Best_Nr"
+	1    3850 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 1350 4150 1350
+Wire Wire Line
+	4150 1400 4150 1350
+Connection ~ 4150 1350
+Wire Wire Line
+	3700 1350 3650 1350
+Wire Wire Line
+	3650 1350 3650 1400
+$Comp
+L fdsp_power:GNDD #PWR047
+U 1 1 621DC8BF
+P 3650 1400
+F 0 "#PWR047" H 3650 1150 50  0001 C CNN
+F 1 "GNDD" H 3650 1250 50  0000 C CNN
+F 2 "" H 3650 1400 60  0000 C CNN
+F 3 "" H 3650 1400 60  0000 C CNN
+	1    3650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 621FE5BF
+P 10150 2425
+F 0 "C16" V 10300 2275 50  0000 L CNN
+F 1 "100n" V 10200 2175 50  0000 L CNN
+F 2 "fdsp_capacitor:C_0805_HandSoldering" H 10188 2275 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B300/X7R-G0805%23YAG.pdf" H 10150 2425 50  0001 C CNN
+F 4 "X7R-G0805 100N" H 10150 2425 60  0001 C CNN "Reichelt_Best_Nr"
+	1    10150 2425
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 2725 9850 2725
+Wire Wire Line
+	9600 2575 9600 2725
+Wire Wire Line
+	10000 2425 9850 2425
+Wire Wire Line
+	9850 2425 9850 2725
+Connection ~ 9850 2725
+Wire Wire Line
+	9850 2725 9900 2725
+Wire Wire Line
+	10300 2425 10450 2425
+Wire Wire Line
+	10450 2425 10450 2725
+Connection ~ 10450 2725
+Wire Wire Line
+	10450 2725 10600 2725
+$Comp
+L Device:C C17
+U 1 1 6229C017
+P 10150 5075
+F 0 "C17" V 10300 4925 50  0000 L CNN
+F 1 "100n" V 10200 4825 50  0000 L CNN
+F 2 "fdsp_capacitor:C_0805_HandSoldering" H 10188 4925 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B300/X7R-G0805%23YAG.pdf" H 10150 5075 50  0001 C CNN
+F 4 "X7R-G0805 100N" H 10150 5075 60  0001 C CNN "Reichelt_Best_Nr"
+	1    10150 5075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 5075 9850 5075
+Wire Wire Line
+	9850 5075 9850 5375
+Wire Wire Line
+	10300 5075 10450 5075
+Wire Wire Line
+	10450 5075 10450 5375
+Connection ~ 9850 5375
+Connection ~ 10450 5375
+Wire Wire Line
+	10450 5375 10600 5375
+Wire Wire Line
+	9600 5375 9850 5375
+Wire Wire Line
+	1075 1175 1325 1175
+Text Label 2450 1075 2    50   ~ 0
+~BCLK
+Wire Wire Line
+	1925 1075 2450 1075
+$Comp
+L power:+5VD #PWR038
+U 1 1 6247A5C2
+P 2825 2850
+F 0 "#PWR038" H 2825 2700 50  0001 C CNN
+F 1 "+5VD" H 2825 3000 50  0000 C CNN
+F 2 "" H 2825 2850 50  0001 C CNN
+F 3 "" H 2825 2850 50  0001 C CNN
+	1    2825 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 790  4460 0    79   ~ 16
+ADAT\nTHRU
+Wire Notes Line style solid
+	775  4200 775  4470
+Wire Notes Line style solid
+	775  4470 1175 4470
+Wire Notes Line style solid
+	1175 4470 1175 4200
+Wire Notes Line style solid
+	1175 4200 775  4200
+$Comp
+L power:+5VD #PWR051
+U 1 1 629FBFA6
+P 2375 3200
+F 0 "#PWR051" H 2375 3050 50  0001 C CNN
+F 1 "+5VD" H 2375 3350 50  0000 C CNN
+F 2 "" H 2375 3200 50  0001 C CNN
+F 3 "" H 2375 3200 50  0001 C CNN
+	1    2375 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8225 2000 8325 2000
+NoConn ~ 7975 4500
+NoConn ~ 4450 6400
+NoConn ~ 4450 6500
+$Comp
+L fdsp_power:GNDD #PWR0101
+U 1 1 62F9A66B
+P 1250 3500
+F 0 "#PWR0101" H 1250 3250 50  0001 C CNN
+F 1 "GNDD" H 1250 3350 50  0000 C CNN
+F 2 "" H 1250 3500 60  0000 C CNN
+F 3 "" H 1250 3500 60  0000 C CNN
+	1    1250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3500 1250 3400
+Wire Wire Line
+	1250 1850 1350 1850
+Wire Wire Line
+	1350 2550 1250 2550
+Connection ~ 1250 2550
+Wire Wire Line
+	1350 3200 1250 3200
+Wire Wire Line
+	1350 3400 1250 3400
+Connection ~ 1250 3400
+NoConn ~ 1950 3300
+Text GLabel 3050 6600 0    51   BiDi ~ 0
+GNDD
+Wire Wire Line
+	3050 6600 3300 6600
+Connection ~ 3300 6600
+Text GLabel 2700 5800 0    51   BiDi ~ 0
++5VD
+Wire Wire Line
+	2700 5800 2950 5800
+Text GLabel 6675 1400 0    51   BiDi ~ 0
+VDD
+Wire Wire Line
+	6675 1400 6825 1400
+Connection ~ 6825 1400
+Connection ~ 10600 4725
+Connection ~ 10600 2075
+Text GLabel 7350 1700 0    51   Input ~ 0
+~RX_RES
+Wire Wire Line
+	7350 1700 7425 1700
+Wire Wire Line
+	8200 5200 7975 5200
+Text GLabel 5725 4975 2    51   Output ~ 0
+~RX_RES
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q2
+U 1 1 6044A0F8
+P 5625 5300
+F 0 "Q2" H 5750 5375 60  0000 L CNN
+F 1 "2N7002" H 5750 5275 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5825 5500 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5825 5600 60  0001 L CNN
+F 4 "2N7002NCT-ND" H 5825 5700 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7002" H 5825 5800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5825 5900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5825 6000 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5825 6100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664" H 5825 6200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 115MA SOT-23" H 5825 6300 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5825 6400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5825 6500 60  0001 L CNN "Status"
+	1    5625 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5325 5400 5100 5400
+Connection ~ 5100 5400
+Wire Wire Line
+	5625 5100 5625 4975
+Wire Wire Line
+	5625 4975 5725 4975
+Wire Wire Line
+	5625 4975 5625 4875
+Connection ~ 5625 4975
+$Comp
+L power:+3.3VDAC #PWR01
+U 1 1 604C2CE1
+P 5625 4500
+F 0 "#PWR01" H 5775 4450 50  0001 C CNN
+F 1 "+3.3VDAC" H 5625 4650 50  0000 C CNN
+F 2 "" H 5625 4500 50  0001 C CNN
+F 3 "" H 5625 4500 50  0001 C CNN
+	1    5625 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR02
+U 1 1 604E2094
+P 5625 5525
+F 0 "#PWR02" H 5625 5275 50  0001 C CNN
+F 1 "GNDD" H 5625 5375 50  0000 C CNN
+F 2 "" H 5625 5525 60  0000 C CNN
+F 3 "" H 5625 5525 60  0000 C CNN
+	1    5625 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5625 5500 5625 5525
+$Comp
+L Device:R R?
+U 1 1 6053D593
+P 5625 4725
+AR Path="/60262604/6053D593" Ref="R?"  Part="1" 
+AR Path="/60262E22/6053D593" Ref="R59"  Part="1" 
+F 0 "R59" V 5725 4700 50  0000 C CNN
+F 1 "3.3k" V 5625 4725 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 5555 4725 50  0001 C CNN
+F 3 "~" H 5625 4725 50  0001 C CNN
+	1    5625 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5625 4500 5625 4575
+Text GLabel 7175 4700 0    51   Input ~ 0
+~RX_RES
+Wire Wire Line
+	8200 5200 8200 5775
+Wire Wire Line
+	8200 5775 7275 5775
+Wire Wire Line
+	7275 5775 7275 5200
+Connection ~ 7275 5200
+Wire Wire Line
+	7275 5200 7475 5200
+Wire Wire Line
+	8300 5100 8300 5875
+Wire Wire Line
+	8300 5875 7175 5875
+Wire Wire Line
+	7975 5100 8300 5100
+Wire Wire Line
+	7175 5100 7175 5875
+Connection ~ 7175 5100
+Wire Wire Line
+	7175 5100 7475 5100
+Text Notes 4600 5390 0    50   ~ 0
+H=UNLOCK\nL=LOCKED
+Wire Wire Line
+	8175 4800 8175 4250
+Wire Wire Line
+	7975 4800 8175 4800
+Wire Wire Line
+	7800 4250 8175 4250
+Wire Wire Line
+	7425 5450 7725 5450
+Connection ~ 8050 4900
+Wire Wire Line
+	8050 4400 7975 4400
+Wire Wire Line
+	7975 5300 8100 5300
+Wire Wire Line
+	8100 5300 8100 5675
+Wire Wire Line
+	8100 5675 7375 5675
+Wire Wire Line
+	7375 5675 7375 5300
+Connection ~ 7375 5300
+Wire Wire Line
+	7375 5300 7475 5300
+Connection ~ 7725 5450
+Wire Wire Line
+	7725 5450 8050 5450
+Text GLabel 8225 5000 2    51   Input ~ 0
+SDATA1
+$Comp
+L 74xx:74HC86 U8
+U 1 1 609A2138
+P 1650 1750
+F 0 "U8" H 1650 2125 50  0000 C CNN
+F 1 "74HC86" H 1650 2025 50  0000 C CNN
+F 2 "fdsp_housing:SO14_3.9x8.7mm_Pitch1.27mm" H 1650 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 1750 50  0001 C CNN
+	1    1650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC86 U8
+U 5 1 609A3E91
+P 2825 3350
+F 0 "U8" H 3075 3425 50  0000 L CNN
+F 1 "74HC86" H 3075 3325 50  0000 L CNN
+F 2 "fdsp_housing:SO14_3.9x8.7mm_Pitch1.27mm" H 2825 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2825 3350 50  0001 C CNN
+	5    2825 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC86 U8
+U 2 1 609A9290
+P 1650 2450
+F 0 "U8" H 1650 2800 50  0000 C CNN
+F 1 "74HC86" H 1650 2700 50  0000 C CNN
+F 2 "fdsp_housing:SO14_3.9x8.7mm_Pitch1.27mm" H 1650 2450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 2450 50  0001 C CNN
+	2    1650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC86 U8
+U 3 1 609AB5B5
+P 1625 1075
+F 0 "U8" H 1650 1450 50  0000 C CNN
+F 1 "74HC86" H 1650 1350 50  0000 C CNN
+F 2 "fdsp_housing:SO14_3.9x8.7mm_Pitch1.27mm" H 1625 1075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1625 1075 50  0001 C CNN
+	3    1625 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC86 U8
+U 4 1 609AD222
+P 1650 3300
+F 0 "U8" H 1650 3675 50  0000 C CNN
+F 1 "74HC86" H 1650 3575 50  0000 C CNN
+F 2 "fdsp_housing:SO14_3.9x8.7mm_Pitch1.27mm" H 1650 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 3300 50  0001 C CNN
+	4    1650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR03
+U 1 1 60A91D76
+P 1175 825
+F 0 "#PWR03" H 1175 675 50  0001 C CNN
+F 1 "+5VD" H 1175 975 50  0000 C CNN
+F 2 "" H 1175 825 50  0001 C CNN
+F 3 "" H 1175 825 50  0001 C CNN
+	1    1175 825 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1175 825  1175 975 
+Wire Wire Line
+	1175 975  1325 975 
+Wire Wire Line
+	1350 1650 1050 1650
+Wire Wire Line
+	1950 1750 2450 1750
+Text Label 2450 1750 2    50   ~ 0
+LRCK_B
+Wire Wire Line
+	1250 2550 1250 3200
+Connection ~ 1250 3200
+Wire Wire Line
+	1250 3200 1250 3400
+Wire Wire Line
+	1250 1850 1250 2550
+Wire Wire Line
+	875  2350 1350 2350
+Text Label 875  2350 0    50   ~ 0
+256fs
+Wire Wire Line
+	1950 2450 2450 2450
+Text Label 2450 2450 2    50   ~ 0
+256fs_B
+Text GLabel 8325 1700 2    51   Input ~ 0
+DAC_LRCK
+$Comp
+L Device:R R34
+U 1 1 6102F615
+P 8075 1700
+F 0 "R34" V 8025 1875 50  0000 C CNN
+F 1 "33" V 8075 1700 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 8005 1700 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 8075 1700 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 8075 1700 60  0001 C CNN "Reichelt_Best_Nr"
+	1    8075 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8225 1700 8325 1700
+Text GLabel 7025 1800 0    51   Input ~ 0
+DAC_BCLK
+$Comp
+L Device:R R33
+U 1 1 610523E2
+P 7175 1800
+F 0 "R33" V 7225 1975 50  0000 C CNN
+F 1 "33" V 7175 1800 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 7105 1800 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 7175 1800 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 7175 1800 60  0001 C CNN "Reichelt_Best_Nr"
+	1    7175 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1800 3650 1800
+Connection ~ 3600 1800
+Wire Wire Line
+	3600 1700 3600 1800
+Wire Wire Line
+	3650 1700 3600 1700
+Text Label 3225 1800 0    50   ~ 0
+256fs_B
+Wire Wire Line
+	3225 1800 3600 1800
+Text GLabel 5350 1600 2    51   Output ~ 0
+DAC_MCK1
+Text GLabel 5350 1700 2    51   Output ~ 0
+DAC_MCK2
+Text GLabel 5350 1800 2    51   Output ~ 0
+DAC_MCK3
+Text GLabel 5350 1500 2    51   Output ~ 0
+DAC_MCK0
+Text GLabel 5350 2100 2    51   Output ~ 0
+DAC_DAT0
+Text GLabel 5350 2300 2    51   Output ~ 0
+DAC_DAT2
+Text GLabel 5350 2200 2    51   Output ~ 0
+DAC_DAT1
+Text GLabel 5350 2400 2    51   Output ~ 0
+DAC_DAT3
+$Comp
+L Device:R R45
+U 1 1 61AA2D56
+P 5000 1800
+F 0 "R45" V 4950 2000 50  0000 C CNN
+F 1 "33" V 5000 1800 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 1800 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 1800 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 1800 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 1800
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R44
+U 1 1 61AA2D61
+P 5000 1700
+F 0 "R44" V 4950 1900 50  0000 C CNN
+F 1 "33" V 5000 1700 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 1700 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 1700 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 1700 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 1700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 61AA2D6C
+P 5000 1600
+F 0 "R43" V 4950 1800 50  0000 C CNN
+F 1 "33" V 5000 1600 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 1600 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 1600 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 1600 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 1600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 61AA2D77
+P 5000 1500
+F 0 "R42" V 4950 1700 50  0000 C CNN
+F 1 "33" V 5000 1500 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 1500 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 1500 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 1500 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 1500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5150 1800 5350 1800
+Wire Wire Line
+	5150 1700 5350 1700
+Wire Wire Line
+	5150 1600 5350 1600
+Wire Wire Line
+	5150 1500 5350 1500
+Wire Wire Line
+	4650 1700 4750 1700
+Text Notes 3200 2525 0    50   ~ 0
+(5V Domain)
+Text GLabel 5350 1900 2    51   Output ~ 0
+DAC_BCLK
+Text GLabel 5350 2000 2    51   Output ~ 0
+DAC_LRCK
+Wire Wire Line
+	3225 1900 3650 1900
+Text Label 3225 1900 0    50   ~ 0
+~BCLK
+Wire Wire Line
+	3650 2000 3225 2000
+Text Label 3225 2000 0    50   ~ 0
+LRCK_B
+$Comp
+L fdsp_power:GNDD #PWR05
+U 1 1 603600E7
+P 1100 7275
+F 0 "#PWR05" H 1100 7025 50  0001 C CNN
+F 1 "GNDD" H 1100 7125 50  0000 C CNN
+F 2 "" H 1100 7275 60  0000 C CNN
+F 3 "" H 1100 7275 60  0000 C CNN
+	1    1100 7275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 603CB762
+P 1100 6375
+AR Path="/603CB762" Ref="H?"  Part="1" 
+AR Path="/60262E22/603CB762" Ref="H5"  Part="1" 
+F 0 "H5" H 1200 6450 50  0000 L CNN
+F 1 "MountingHole" H 1200 6350 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1100 6375 50  0001 C CNN
+F 3 "~" H 1100 6375 50  0001 C CNN
+	1    1100 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 603CB768
+P 1100 6625
+AR Path="/603CB768" Ref="H?"  Part="1" 
+AR Path="/60262604/603CB768" Ref="H?"  Part="1" 
+AR Path="/60262E22/603CB768" Ref="H6"  Part="1" 
+F 0 "H6" H 1200 6700 50  0000 L CNN
+F 1 "MountingHole" H 1200 6600 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1100 6625 50  0001 C CNN
+F 3 "~" H 1100 6625 50  0001 C CNN
+	1    1100 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 603CB76E
+P 1100 7175
+AR Path="/603CB76E" Ref="H?"  Part="1" 
+AR Path="/60262604/603CB76E" Ref="H?"  Part="1" 
+AR Path="/60262E22/603CB76E" Ref="H8"  Part="1" 
+F 0 "H8" H 1200 7250 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1200 7150 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 1100 7175 50  0001 C CNN
+F 3 "~" H 1100 7175 50  0001 C CNN
+	1    1100 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 603CB774
+P 1100 6875
+AR Path="/603CB774" Ref="H?"  Part="1" 
+AR Path="/60262604/603CB774" Ref="H?"  Part="1" 
+AR Path="/60262E22/603CB774" Ref="H7"  Part="1" 
+F 0 "H7" H 1200 6950 50  0000 L CNN
+F 1 "MountingHole" H 1200 6850 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1100 6875 50  0001 C CNN
+F 3 "~" H 1100 6875 50  0001 C CNN
+	1    1100 6875
+	1    0    0    -1  
+$EndComp
+Text Notes 4775 2575 0    50   ~ 0
+(3.3V Domain)
+$Comp
+L Device:R R38
+U 1 1 602C172F
+P 5000 2400
+F 0 "R38" V 4950 2600 50  0000 C CNN
+F 1 "33" V 5000 2400 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 2400 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 2400 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 2400 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 2400
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 602C1736
+P 5000 2300
+F 0 "R39" V 4950 2500 50  0000 C CNN
+F 1 "33" V 5000 2300 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 2300 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 2300 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 2300 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 602C173D
+P 5000 2200
+F 0 "R40" V 4950 2400 50  0000 C CNN
+F 1 "33" V 5000 2200 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 2200 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 2200 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 2200 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 2200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 602C1744
+P 5000 2100
+F 0 "R41" V 4950 2300 50  0000 C CNN
+F 1 "33" V 5000 2100 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 4930 2100 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 5000 2100 50  0001 C CNN
+F 4 "SMD-0805 33.0" V 5000 2100 60  0001 C CNN "Reichelt_Best_Nr"
+	1    5000 2100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5350 2400 5150 2400
+Wire Wire Line
+	5350 2300 5150 2300
+Wire Wire Line
+	5350 2200 5150 2200
+Wire Wire Line
+	5350 2100 5150 2100
+Wire Wire Line
+	3650 2100 3225 2100
+Wire Wire Line
+	3650 2200 3225 2200
+Wire Wire Line
+	3650 2300 3225 2300
+Wire Wire Line
+	3650 2400 3225 2400
+Text Label 3225 2100 0    50   ~ 0
+DATA0
+Text Label 3225 2200 0    50   ~ 0
+DATA1
+Text Label 3225 2300 0    50   ~ 0
+DATA2
+Text Label 3225 2400 0    50   ~ 0
+DATA3
+Wire Wire Line
+	4650 1900 5350 1900
+Wire Wire Line
+	4650 2000 5350 2000
+Wire Wire Line
+	4650 1800 4850 1800
+Wire Wire Line
+	4750 1700 4750 1600
+Wire Wire Line
+	4750 1500 4850 1500
+Wire Wire Line
+	4850 1600 4750 1600
+Connection ~ 4750 1600
+Wire Wire Line
+	4750 1600 4750 1500
+Wire Wire Line
+	4850 1700 4850 1800
+Connection ~ 4850 1800
+Wire Wire Line
+	4850 2100 4650 2100
+Wire Wire Line
+	4650 2200 4850 2200
+Wire Wire Line
+	4650 2300 4850 2300
+Wire Wire Line
+	4850 2400 4650 2400
+$EndSCHEMATC

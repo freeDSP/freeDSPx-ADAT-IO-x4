@@ -1,0 +1,91 @@
+
+(rules PCB ADAT-IO-x4
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 5960)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND GNDD +5VD +5V VDD +3V3 "Net-(C9-Pad2)" "Net-(C11-Pad2)"
+    +3.3VDAC "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)" "Net-(J1-Pad3)" "Net-(J2-Pad3)" VIN
+    ADCDout2 DATAin2 BCLKin "Net-(J3-Pad9)" SDA SCL "Net-(J3-Pad15)" ADCDout3
+    DATAin3 "Net-(J4-Pad9)" "Net-(J4-Pad15)" "Net-(J5-Pad15)" "Net-(J5-Pad9)" DATAin0 ADCDout0 "Net-(J6-Pad15)"
+    "Net-(J6-Pad9)" DATAin1 ADCDout1 "Net-(J7-Pad5)" "Net-(J7-Pad13)" MCLKin "Net-(J7-Pad4)" LRCLKin
+    "~TX_MUTE" "Net-(J8-Pad4)" "~TX_RES" "Net-(J8-Pad16)" "Net-(J8-Pad18)" "Net-(J8-Pad20)" "Net-(J9-Pad2)" SDATA2
+    SDATA3 "DAC_DAT3" "DAC_SDA" "Net-(J10-Pad10)" "DAC_DAT1" SDATA1 "DAC_MCK0" "DAC_DAT2"
+    "DAC_SCL" "Net-(J10-Pad13)" "Net-(J10-Pad11)" "DAC_DAT0" SDATA0 "Net-(J11-Pad4)" "Net-(J11-Pad17)" "Net-(J11-Pad15)"
+    "Net-(J12-Pad9)" "Net-(J12-Pad7)" "Net-(J13-Pad7)" "Net-(J13-Pad9)" "DAC_MCK1" "DAC_MCK2" "Net-(J14-Pad9)" "Net-(J14-Pad7)"
+    "Net-(J15-Pad7)" "Net-(J15-Pad9)" "DAC_MCK3" "/ADATx4TX-Part/MUTEn" "Net-(R3-Pad1)" "Net-(R4-Pad1)" "Net-(R18-Pad1)" "Net-(R19-Pad1)"
+    "Net-(R21-Pad1)" "Net-(R25-Pad2)" "Net-(R25-Pad1)" "/ADATx4RX-Part/SMUX" "Net-(R26-Pad1)" "Net-(R28-Pad1)" "Net-(R28-Pad2)" "/ADATx4RX-Part/256fs"
+    "Net-(R29-Pad2)" "Net-(R30-Pad2)" "/ADATx4RX-Part/BCLK" "Net-(R31-Pad2)" "Net-(R32-Pad2)" "/ADATx4RX-Part/LRCK" "/ADATx4RX-Part/DATA0" "/ADATx4RX-Part/DATA1"
+    "/ADATx4RX-Part/DATA2" "/ADATx4RX-Part/DATA3" "Net-(R38-Pad2)" "Net-(R40-Pad2)" "Net-(R42-Pad2)" "Net-(R43-Pad2)" "Net-(R44-Pad2)" "Net-(R45-Pad2)"
+    "DAC_BCLK" "DAC_LRCK" "Net-(U3-Pad12)" "Net-(U3-Pad13)" "/ADATx4TX-Part/LRCKI" "/ADATx4TX-Part/DIN3" "/ADATx4TX-Part/DIN2" "/ADATx4TX-Part/DIN1"
+    "/ADATx4TX-Part/DIN0" "Net-(U4-Pad2)" "Net-(U4-Pad3)" "Net-(U7-Pad1)" "/ADATx4RX-Part/~BCLK" "Net-(U9-Pad14)" "Net-(U9-Pad15)" "Net-(U9-Pad17)"
+    "~RX_RES" "Net-(Q2-Pad1)" "/ADATx4RX-Part/LRCK_B" "/ADATx4RX-Part/256fs_B" "Net-(U8-Pad11)" "Net-(J10-Pad4)" "Net-(J10-Pad5)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
