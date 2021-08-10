@@ -3,8 +3,8 @@
 BOARD STATUS: RELEASED
 
 The freeDSPx ADAT IO x4 is a digital IO expansion board for the freeDSP family. 
-It provides 4 Lightpipe inputs and 4 Lightpipe outputs via single Toslink Cable.
-48kHz sampled 8ch  23bit (I8S)audio stream and 1bit Logic Signal information will transfered via single TOS-Link optical cable.
+It provides 4 Lightpipe(I2S) inputs and 4 Lightpipe outputs via single Toslink Cable.
+48kHz sampled 8ch 23bits (23bit I8S) audio stream and 1bit Logic Signal information will transfered via single TOS-Link optical cable.
 Logic I/O levels are unified 3.3V LV-CMOS level.
 Optical through optput enables to connect the cascade connections such as FreeDSP --> Left Active SPK --> Right Active SPK
 
