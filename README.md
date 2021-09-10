@@ -10,6 +10,10 @@ Optical through optput enables to connect the cascade connections such as FreeDS
 
 Enjoy!
 
+Project web page:
+(Original Japanese version) https://cyberpithilo.web.fc2.com/audio/freedsp/adat_io-x4.html
+(Machine translation) https://translate.google.com/translate?sl=ja&tl=en&u=https://cyberpithilo.web.fc2.com/audio/freedsp/adat_io-x4.html
+
 ## License
 
 This work and all other materials under https://github.com/freeDSP are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative Commons Attribution Share-Alike 4.0 license</a>. This allows for both personal and commercial derivative works, as long as they credit freeDSP and release their designs under the same license.
