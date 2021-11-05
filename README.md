@@ -14,8 +14,10 @@ Project web page:
 
 (Original Japanese version) https://cyberpithilo.web.fc2.com/audio/freedsp/adat_io-x4.html
 
-(Machine translation) 
+(Machine translation Yandex) 
 https://translate.yandex.com/translate?url=https%3A%2F%2Fcyberpithilo.web.fc2.com%2Faudio%2Ffreedsp%2Findex.html&lang=ja-en
+
+(Machine translation Google) 
 https://translate.google.com/translate?sl=ja&tl=en&u=https://cyberpithilo.web.fc2.com/audio/freedsp/adat_io-x4.html
 
 ## License
