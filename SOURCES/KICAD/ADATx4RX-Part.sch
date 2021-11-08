@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "ADAT I8S Reciever Part"
-Date "2021-02-11"
-Rev "0.1"
+Date "2021-08-01"
+Rev "0.2"
 Comp "CyberPit HILO. 2021"
 Comment1 ""
 Comment2 ""
@@ -569,7 +569,7 @@ F 3 "" H 6825 1300 50  0001 C CNN
 	1    6825 1300
 	1    0    0    -1  
 $EndComp
-Text Label 1075 1175 0    50   ~ 0
+Text Label 825  1175 0    50   ~ 0
 BCLK
 Wire Wire Line
 	5350 5600 4950 5600
@@ -940,7 +940,7 @@ $Comp
 L Device:R R47
 U 1 1 60F7D790
 P 6950 5100
-F 0 "R47" V 6900 5300 50  0000 C CNN
+F 0 "R47" V 6800 5100 50  0000 C CNN
 F 1 "33" V 6950 5100 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 6880 5100 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 6950 5100 50  0001 C CNN
@@ -954,7 +954,7 @@ $Comp
 L Device:R R48
 U 1 1 60F8DDED
 P 6950 5200
-F 0 "R48" V 7000 5400 50  0000 C CNN
+F 0 "R48" V 7100 5200 50  0000 C CNN
 F 1 "33" V 6950 5200 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 6880 5200 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 6950 5200 50  0001 C CNN
@@ -1097,7 +1097,7 @@ $Comp
 L Device:R R28
 U 1 1 6140B425
 P 4550 4850
-F 0 "R28" V 4500 5000 50  0000 C CNN
+F 0 "R28" V 4450 4850 50  0000 C CNN
 F 1 "33" V 4550 4850 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 4480 4850 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/SMD-1206_SMD-0805_SMD-0603%23YAG.pdf" H 4550 4850 50  0001 C CNN
@@ -1277,7 +1277,7 @@ U 1 1 6174C38E
 P 5100 4950
 AR Path="/60262604/6174C38E" Ref="R?"  Part="1" 
 AR Path="/60262E22/6174C38E" Ref="R46"  Part="1" 
-F 0 "R46" V 5050 4750 50  0000 C CNN
+F 0 "R46" V 5025 4950 50  0000 C CNN
 F 1 "3.3k" V 5100 4950 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 5030 4950 50  0001 C CNN
 F 3 "~" H 5100 4950 50  0001 C CNN
@@ -1301,7 +1301,7 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	5000 4480 4600 4480
 Text Notes 4230 7210 0    79   ~ 16
-MUTE
+SMUX
 Wire Notes Line style solid
 	4200 7050 4200 7250
 Wire Notes Line style solid
@@ -1390,7 +1390,7 @@ F 4 "SMD-0805 33.0" V 4600 5700 60  0001 C CNN "Reichelt_Best_Nr"
 	0    1    1    0   
 $EndComp
 Connection ~ 4950 5600
-Text Label 1050 1650 0    50   ~ 0
+Text Label 800  1650 0    50   ~ 0
 LRCK
 Wire Wire Line
 	3650 2600 3600 2600
@@ -1542,7 +1542,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 5375 9850 5375
 Wire Wire Line
-	1075 1175 1325 1175
+	825  1175 1325 1175
 Text Label 2450 1075 2    50   ~ 0
 ~BCLK
 Wire Wire Line
@@ -1598,10 +1598,7 @@ $EndComp
 Wire Wire Line
 	1250 3500 1250 3400
 Wire Wire Line
-	1250 1850 1350 1850
-Wire Wire Line
 	1350 2550 1250 2550
-Connection ~ 1250 2550
 Wire Wire Line
 	1350 3200 1250 3200
 Wire Wire Line
@@ -1823,7 +1820,7 @@ Wire Wire Line
 Wire Wire Line
 	1175 975  1325 975 
 Wire Wire Line
-	1350 1650 1050 1650
+	1350 1650 800  1650
 Wire Wire Line
 	1950 1750 2450 1750
 Text Label 2450 1750 2    50   ~ 0
@@ -1833,8 +1830,6 @@ Wire Wire Line
 Connection ~ 1250 3200
 Wire Wire Line
 	1250 3200 1250 3400
-Wire Wire Line
-	1250 1850 1250 2550
 Wire Wire Line
 	875  2350 1350 2350
 Text Label 875  2350 0    50   ~ 0
@@ -2138,4 +2133,49 @@ Wire Wire Line
 	4650 2300 4850 2300
 Wire Wire Line
 	4850 2400 4650 2400
+Wire Wire Line
+	1175 975  1175 1850
+Wire Wire Line
+	1175 1850 1350 1850
+Connection ~ 1175 975 
+Text Notes 1900 1900 0    50   ~ 0
+*Inverted (since ver0.2)
+$Comp
+L Connector_Generic:Conn_01x02 J16
+U 1 1 61451684
+P 5450 6700
+F 0 "J16" H 5400 6350 50  0000 C CNN
+F 1 "Conn_01x02" H 5400 6450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5450 6700 50  0001 C CNN
+F 3 "~" H 5450 6700 50  0001 C CNN
+	1    5450 6700
+	1    0    0    1   
+$EndComp
+$Comp
+L fdsp_power:GNDD #PWR071
+U 1 1 61454577
+P 5150 6775
+F 0 "#PWR071" H 5150 6525 50  0001 C CNN
+F 1 "GNDD" H 5150 6625 50  0000 C CNN
+F 2 "" H 5150 6775 60  0000 C CNN
+F 3 "" H 5150 6775 60  0000 C CNN
+	1    5150 6775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6775 5150 6700
+Wire Wire Line
+	5150 6700 5250 6700
+Text Notes 5630 6710 0    79   ~ 16
+SMUX-OUT
+Wire Notes Line style solid
+	5625 6550 5625 6725
+Wire Notes Line style solid
+	5625 6725 6325 6725
+Wire Notes Line style solid
+	6325 6725 6325 6550
+Wire Notes Line style solid
+	6325 6550 5625 6550
+Text Notes 5700 6450 0    50   ~ 0
+This is general pourpse output\n(ex. Manual Reset/Mute/One-way-UART communication, etc…)
 $EndSCHEMATC

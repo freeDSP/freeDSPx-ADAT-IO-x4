@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "ADAT Format I8S Optical Transmitter Part"
-Date "2021-02-11"
-Rev "0.1"
+Date "2021-08-01"
+Rev "0.2"
 Comp "Designed  by CyberPit HILO. 2020"
 Comment1 ""
 Comment2 ""
@@ -421,8 +421,8 @@ $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J8
 U 1 1 6038F86A
 P 4850 6050
-F 0 "J8" H 4550 7000 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 4925 6925 50  0000 C CNN
+F 0 "J8" H 4550 7025 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 4925 6950 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 4850 6050 50  0001 C CNN
 F 3 "~" H 4850 6050 50  0001 C CNN
 	1    4850 6050
@@ -482,17 +482,15 @@ Wire Wire Line
 	2400 2400 2250 2400
 Text GLabel 2200 5150 0    51   Output ~ 0
 MCLKin
-Text GLabel 2200 4850 0    51   Output ~ 0
-LRCLKin
 $Comp
 L Device:R R9
 U 1 1 6074CC36
-P 2500 4850
-F 0 "R9" V 2450 4650 50  0000 C CNN
-F 1 "NOP" V 2500 4850 50  0000 C CNN
-F 2 "fdsp_resistor:R_0805_HandSoldering" V 2430 4850 50  0001 C CNN
-F 3 "~" H 2500 4850 50  0001 C CNN
-	1    2500 4850
+P 2150 4250
+F 0 "R9" V 2050 4250 50  0000 C CNN
+F 1 "100k" V 2150 4250 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 2080 4250 50  0001 C CNN
+F 3 "~" H 2150 4250 50  0001 C CNN
+	1    2150 4250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -507,22 +505,18 @@ F 3 "~" H 2500 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 4850 2350 4850
-Wire Wire Line
 	2350 5150 2200 5150
 Text GLabel 2200 6650 0    51   Output ~ 0
 MCLKin
-Text GLabel 2200 6350 0    51   Output ~ 0
-LRCLKin
 $Comp
 L Device:R R11
 U 1 1 6075000A
-P 2500 6350
-F 0 "R11" V 2450 6150 50  0000 C CNN
-F 1 "NOP" V 2500 6350 50  0000 C CNN
-F 2 "fdsp_resistor:R_0805_HandSoldering" V 2430 6350 50  0001 C CNN
-F 3 "~" H 2500 6350 50  0001 C CNN
-	1    2500 6350
+P 2125 5750
+F 0 "R11" V 2000 5725 50  0000 C CNN
+F 1 "100k" V 2125 5750 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 2055 5750 50  0001 C CNN
+F 3 "~" H 2125 5750 50  0001 C CNN
+	1    2125 5750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -537,22 +531,18 @@ F 3 "~" H 2500 6650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 6350 2350 6350
-Wire Wire Line
 	2350 6650 2200 6650
 Text GLabel 2250 3800 0    51   Output ~ 0
 MCLKin
-Text GLabel 2250 3500 0    51   Output ~ 0
-LRCLKin
 $Comp
 L Device:R R15
 U 1 1 607542A0
-P 2550 3500
-F 0 "R15" V 2500 3300 50  0000 C CNN
-F 1 "NOP" V 2550 3500 50  0000 C CNN
-F 2 "fdsp_resistor:R_0805_HandSoldering" V 2480 3500 50  0001 C CNN
-F 3 "~" H 2550 3500 50  0001 C CNN
-	1    2550 3500
+P 2275 2950
+F 0 "R15" V 2175 2950 50  0000 C CNN
+F 1 "100k" V 2275 2950 50  0000 C CNN
+F 2 "fdsp_resistor:R_0805_HandSoldering" V 2205 2950 50  0001 C CNN
+F 3 "~" H 2275 2950 50  0001 C CNN
+	1    2275 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -566,8 +556,6 @@ F 3 "~" H 2550 3800 50  0001 C CNN
 	1    2550 3800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2250 3500 2400 3500
 Wire Wire Line
 	2400 3800 2250 3800
 $Comp
@@ -583,28 +571,16 @@ F 3 "~" H 2900 3400 50  0001 C CNN
 $EndComp
 Text GLabel 2700 1800 0    51   Input ~ 0
 ADCDout0
-Text GLabel 2650 4550 0    51   Input ~ 0
+Text GLabel 2300 4550 0    51   Input ~ 0
 ADCDout2
-Text GLabel 2650 6050 0    51   Input ~ 0
+Text GLabel 2275 6050 0    51   Input ~ 0
 ADCDout3
-Text GLabel 2700 3200 0    51   Input ~ 0
+Text GLabel 2325 3200 0    51   Input ~ 0
 ADCDout1
-Text GLabel 2250 3400 0    51   Output ~ 0
-BCLKin
-Wire Wire Line
-	2250 3400 2700 3400
 Text GLabel 2250 2000 0    51   Output ~ 0
 BCLKin
 Wire Wire Line
 	2250 2000 2700 2000
-Text GLabel 2200 4750 0    51   Output ~ 0
-BCLKin
-Wire Wire Line
-	2200 4750 2650 4750
-Text GLabel 2200 6250 0    51   Output ~ 0
-BCLKin
-Wire Wire Line
-	2200 6250 2650 6250
 Text GLabel 2200 5050 0    51   BiDi ~ 0
 SCL
 Text GLabel 2200 4950 0    51   BiDi ~ 0
@@ -630,11 +606,11 @@ Wire Wire Line
 Wire Wire Line
 	2250 3700 2700 3700
 Wire Wire Line
-	2250 3300 2700 3300
+	2250 3300 2475 3300
 Wire Wire Line
-	2200 6150 2650 6150
+	2200 6150 2400 6150
 Wire Wire Line
-	2200 4650 2650 4650
+	2200 4650 2400 4650
 Wire Wire Line
 	2250 1900 2700 1900
 Wire Wire Line
@@ -780,7 +756,7 @@ L Device:R R24
 U 1 1 609F4878
 P 8650 3450
 F 0 "R24" V 8550 3450 50  0000 C CNN
-F 1 "100k" V 8650 3450 50  0000 C CNN
+F 1 "10k" V 8650 3450 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 8580 3450 50  0001 C CNN
 F 3 "~" H 8650 3450 50  0001 C CNN
 	1    8650 3450
@@ -833,7 +809,7 @@ F 3 "~" H 8850 2400 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Text Notes 8700 3150 0    50   ~ 0
-H: MUTE\nL: 24bit Left Justified
+H: MUTE\nL: 24bit(23bit I2S) Left Justified
 $Comp
 L Transistor_FET:AO3401A Q1
 U 1 1 60B8292D
@@ -1131,8 +1107,6 @@ Wire Wire Line
 Text Notes 1200 7150 0    59   ~ 0
 (# Need Change to 0R for Optional Classic SMD A/B External ADC Board Connection)
 Text Notes 2600 6750 0    75   ~ 0
-#
-Text Notes 2600 6450 0    75   ~ 0
 #
 Wire Wire Line
 	5200 6150 5200 6700
@@ -1466,7 +1440,7 @@ L Device:R R36
 U 1 1 602BA850
 P 8725 4800
 F 0 "R36" V 8625 4800 50  0000 C CNN
-F 1 "100k" V 8725 4800 50  0000 C CNN
+F 1 "3.3k" V 8725 4800 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 8655 4800 50  0001 C CNN
 F 3 "~" H 8725 4800 50  0001 C CNN
 	1    8725 4800
@@ -1482,7 +1456,7 @@ L Device:R R17
 U 1 1 60B40436
 P 5450 1700
 F 0 "R17" V 5350 1700 50  0000 C CNN
-F 1 "NOP" V 5450 1700 50  0000 C CNN
+F 1 "100k" V 5450 1700 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 5380 1700 50  0001 C CNN
 F 3 "~" H 5450 1700 50  0001 C CNN
 	1    5450 1700
@@ -1628,7 +1602,7 @@ L Device:R R60
 U 1 1 60324CF6
 P 4675 5425
 F 0 "R60" V 4575 5425 50  0000 C CNN
-F 1 "100K" V 4675 5425 50  0000 C CNN
+F 1 "10k" V 4675 5425 50  0000 C CNN
 F 2 "fdsp_resistor:R_0805_HandSoldering" V 4605 5425 50  0001 C CNN
 F 3 "~" H 4675 5425 50  0001 C CNN
 	1    4675 5425
@@ -1652,4 +1626,78 @@ Text Label 5700 5300 0    50   ~ 0
 ~TX_MUTE
 Text Label 3650 5950 0    50   ~ 0
 ~TX_MUTE
+Wire Wire Line
+	2425 2950 2475 2950
+$Comp
+L power:GND #PWR070
+U 1 1 6160AA9E
+P 2025 2950
+F 0 "#PWR070" H 2025 2700 50  0001 C CNN
+F 1 "GND" H 2025 2800 50  0000 C CNN
+F 2 "" H 2025 2950 50  0000 C CNN
+F 3 "" H 2025 2950 50  0000 C CNN
+	1    2025 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 2950 2125 2950
+Wire Wire Line
+	2300 4250 2400 4250
+$Comp
+L power:GND #PWR069
+U 1 1 61684F6A
+P 1900 4250
+F 0 "#PWR069" H 1900 4000 50  0001 C CNN
+F 1 "GND" H 1900 4100 50  0000 C CNN
+F 2 "" H 1900 4250 50  0000 C CNN
+F 3 "" H 1900 4250 50  0000 C CNN
+	1    1900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4250 2000 4250
+Wire Wire Line
+	2325 3200 2700 3200
+Wire Wire Line
+	2300 4550 2650 4550
+Wire Wire Line
+	2475 2950 2475 3300
+Connection ~ 2475 3300
+Wire Wire Line
+	2475 3300 2700 3300
+Wire Wire Line
+	2400 4250 2400 4650
+Connection ~ 2400 4650
+Wire Wire Line
+	2400 4650 2650 4650
+Wire Wire Line
+	2275 5750 2400 5750
+$Comp
+L power:GND #PWR021
+U 1 1 6174A40B
+P 1875 5750
+F 0 "#PWR021" H 1875 5500 50  0001 C CNN
+F 1 "GND" H 1875 5600 50  0000 C CNN
+F 2 "" H 1875 5750 50  0000 C CNN
+F 3 "" H 1875 5750 50  0000 C CNN
+	1    1875 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 5750 1975 5750
+Wire Wire Line
+	2275 6050 2650 6050
+Wire Wire Line
+	2400 5750 2400 6150
+Connection ~ 2400 6150
+Wire Wire Line
+	2400 6150 2650 6150
+Text Notes 1975 975  0    50   ~ 0
+*Pull down I8S Data-Lines for stability (since 0v2)
+Text Notes 3450 5300 0    50   ~ 0
+*Valuse Changed for Stability
+Text Notes 4525 5425 0    50   ~ 0
+*
+Text Notes 8800 3500 0    50   ~ 0
+*Valuse Changed for Stability
 $EndSCHEMATC
