@@ -1,12 +1,20 @@
 # freeDSPx-ADAT-IO-x4
+BOARD STATUS: RELEASED  
 
-BOARD STATUS: RELEASED
+![Boar Photo](https://raw.githubusercontent.com/CyberPit/freeDSPx-ADAT-IO-x4c/CoolAduio-Version/Photo/MountedPCB.jpg)  
 
 The freeDSPx ADAT IO x4 is a digital IO expansion board for the freeDSP family. 
-It provides 4 Lightpipe(I2S) inputs and 4 Lightpipe outputs via single Toslink Cable.
-48kHz sampled 8ch 23bits (23bit I8S) audio stream and 1bit Logic Signal information will transfered via single TOS-Link optical cable.
-Logic I/O levels are unified 3.3V LV-CMOS level.
-Optical through optput enables to connect the cascade connections such as FreeDSP --> Left Active SPK --> Right Active SPK
+It provides 4 Lightpipe(I2S) inputs and 4 Lightpipe outputs via a single Toslink Cable.
+
+![Block Diagram](https://raw.githubusercontent.com/CyberPit/freeDSPx-ADAT-IO-x4c/CoolAduio-Version/Photo/ADAT-IO-x4_SystemBlockDiagram.png)  
+Optical through output enables to connect the cascade connections such as FreeDSP --> Left Active SPK --> Right Active SPK
+
+48kHz sampled 8ch 23bits (23bit I8S) audio stream and 1bit Logic Signal information will be transferred via a single TOS-Link optical cable.  
+![Testing Snapshot](https://raw.githubusercontent.com/CyberPit/freeDSPx-ADAT-IO-x4c/CoolAduio-Version/Photo/Connect_SMDAB.jpg)  
+Logic I/O levels are unified 3.3V LV-CMOS level.  
+
+
+![I8S](https://raw.githubusercontent.com/CyberPit/freeDSPx-ADAT-IO-x4c/CoolAduio-Version/Photo/ADATIO_I8S_Thru-Latency.gif)  
 
 Enjoy!
 
